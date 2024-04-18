@@ -1,0 +1,1409 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    
+    
+    <link rel="SHORTCUT ICON" href="../../../img/clover.ico" />
+
+    <link rel="stylesheet" href="../../../aui/css/aui.min.css" media="all"/>
+    <link rel="stylesheet" href="../../../aui/css/aui-experimental.min.css" media="all"/>
+    <!--[if IE 9]><link rel="stylesheet" href="../../../aui/css/aui-ie9.min.css" media="all"/><![endif]-->
+
+    <style type="text/css" media="all">
+        @import url('../../../style.css');
+        @import url('../../../tree.css');
+        
+    </style>
+
+    <script src="../../../jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="../../../aui/js/aui.min.js" type="text/javascript"></script>
+    <script src="../../../aui/js/aui-experimental.min.js" type="text/javascript"></script>
+    <script src="../../../aui/js/aui-soy.min.js" type="text/javascript"></script>
+
+    <script src="../../../package-nodes-tree.js" type="text/javascript"></script>
+    <script src="../../../clover-tree.js" type="text/javascript"></script>
+    <script src="../../../clover.js" type="text/javascript"></script>
+    <script src="../../../clover-descriptions.js" type="text/javascript"></script>
+    <script src="../../../cloud.js" type="text/javascript"></script>
+
+            <title>jsoup Java HTML Parser 1.12.2-SNAPSHOT</title>
+    </head>
+
+<body>
+    <div id="page">
+        
+        
+
+
+<header id="header" role="banner">
+    <nav class="aui-header aui-dropdown2-trigger-group" role="navigation">
+        <div class="aui-header-inner">
+            <div class="aui-header-primary">
+                <h1 id="logo" class="aui-header-logo aui-header-logo-clover">
+                    <a href="http://openclover.org" title="Visit OpenClover home page"><span class="aui-header-logo-device">OpenClover</span></a>
+                </h1>
+                            </div>
+            <div class="aui-header-secondary">
+                <ul class="aui-nav">
+                    <li id="system-help-menu">
+                        <a class="aui-nav-link" title="Open online documentation" target="_blank"
+                           href="http://openclover.org/documentation">
+                            <span class="aui-icon aui-icon-small aui-iconfont-help">&#160;Help</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+        
+        <div class="aui-page-panel">
+            <div class="aui-page-panel-inner">
+                <div class="aui-page-panel-nav aui-page-panel-nav-clover">
+                    
+
+<div class="aui-page-header-inner" style="margin-bottom: 20px;">
+    <div class="aui-page-header-image">
+                <div class="aui-avatar aui-avatar-large aui-avatar-project">
+            <div class="aui-avatar-inner">
+                                    <img src="../../../img/clover_logo_large.png" alt="Clover icon"/>
+                            </div>
+        </div>
+            </div>
+    <div class="aui-page-header-main" >
+        <h1>
+                                        jsoup Java HTML Parser 1.12.2-SNAPSHOT
+                                </h1>
+    </div>
+</div>
+
+<nav class="aui-navgroup aui-navgroup-vertical">
+    <div class="aui-navgroup-inner">
+                                            <ul class="aui-nav">
+                <li class="">
+                    <a href="../../../dashboard.html">Project overview</a>
+                </li>
+            </ul>
+        
+                <div class="aui-nav-heading packages-nav-heading">
+            <strong>Packages</strong>
+        </div>
+        <div class="aui-nav project-packages">
+            <form method="get" action="#" class="aui package-filter-container">
+                <input type="text" autocomplete="off" class="package-filter text"
+                       placeholder="Type to filter packages..." name="package-filter" id="package-filter"
+                       title="Start typing package name (or part of the name) to search through the tree. Use arrow keys and the Enter key to navigate."/>
+            </form>
+            <p class="package-filter-no-results-message hidden">
+                <small>No results found.</small>
+            </p>
+                                                <div class="packages-tree-wrapper" data-root-relative="../../../" data-package-name="org.jsoup.parser">
+                <div class="packages-tree-container"></div>
+                <div class="clover-packages-lozenges"></div>
+            </div>
+        </div>
+        
+            </div>
+</nav>                </div>
+                <section class="aui-page-panel-content">
+                    <div class="aui-page-panel-content-clover">
+
+                    
+                    <div class="aui-page-header-main"><ol class="aui-nav aui-nav-breadcrumbs">
+    
+    <li><a href="../../../dashboard.html"> Project Clover database Thu Oct 19 2023 19:08:27 PDT</a></li>
+     <li><a href="test-pkg-summary.html">Package org.jsoup.parser</a></li>
+</ol></div>
+    
+<h1 class="aui-h2-clover">
+            
+        Class HtmlParserTest
+    </h1>
+
+
+ 
+<div class="aui-tabs horizontal-tabs" id="tabs-file">
+    <ul class="tabs-menu">
+        <li class="menu-item">
+            <a href="HtmlParserTest.html"><strong>Source file</strong></a>
+        </li>
+        <li class="menu-item active-tab">
+            <a href="#tabs-file-test-results"><strong>Test results</strong></a>
+        </li>
+    </ul>
+    <div class="tabs-pane aui-tabs-pane-100-pcnt active-pane" id="tabs-file-test-results">
+        <div>&#160;</div>
+
+
+
+
+<table id="testClassSummaryTable" class="aui">
+<thead>
+    <tr>
+        <th width="40%"><label>Class</label></th>
+        <th width="10%"><label title="Total number of tests (or test iterations) executed.">Tests</label></th>
+        <th width="10%"><label title="Number of failed tests">Fail</label></th>
+        <th width="10%"><label title="Number of test errors">Error</label></th>
+        <th width="10%">
+            <label title="The total time in seconds taken to run this set of tests.">Time (secs)</label>
+        </th>
+        <th width="20%"><label>% Tests Success</label></th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>HtmlParserTest</td>
+        <td class="testPasses"><span class="sortValue">132</span>132</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td>0.523</td>
+        <td class="align-middle">
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+</tbody>
+</table>
+
+<div>&#160;</div>
+
+<table id="testClassTestsTable" class="aui aui-table-sortable">
+<thead>
+    <tr>
+        <th width="40%">
+            <label title="Tests (or test iterations) which were executed.">Tests</label>
+        </th>
+        <th width="10%"><label>Started</label></th>
+        <th width="10%"><label>Status</label></th>
+        <th width="10%">
+            <label title="The total time in seconds taken to run this set of tests.">Time (secs)</label>
+        </th>
+        <th width="30%"><label>Message</label></th>
+    </tr>
+</thead>
+<tbody>
+
+
+<tr>
+    <td><span class="sortValue">HtmlParserTest.handlesTextAfterData</span><a href="HtmlParserTest_handlesTextAfterData_9a.html">HtmlParserTest.handlesTextAfterData</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1697767711825</span>19 Oct 19:08:31</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">HtmlParserTest.handlesKnownEmptyTitle</span><a href="HtmlParserTest_handlesKnownEmptyTitle_g9.html">HtmlParserTest.handlesKnownEmptyTitle</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1697767712293</span>19 Oct 19:08:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">HtmlParserTest.testReinsertionModeForThCelss</span><a href="HtmlParserTest_testReinsertionModeForThCelss_2a.html">HtmlParserTest.testReinsertionModeForThCelss</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1697767712306</span>19 Oct 19:08:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">HtmlParserTest.handleCDataInText</span><a href="HtmlParserTest_handleCDataInText_8f.html">HtmlParserTest.handleCDataInText</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1697767712420</span>19 Oct 19:08:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">HtmlParserTest.handlesControlCodeInAttributeName</span><a href="HtmlParserTest_handlesControlCodeInAttributeName_4d.html">HtmlParserTest.handlesControlCodeInAttributeName</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1697767712307</span>19 Oct 19:08:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">HtmlParserTest.handlesUnclosedDefinitionLists</span><a href="HtmlParserTest_handlesUnclosedDefinitionLists_3w.html">HtmlParserTest.handlesUnclosedDefinitionLists</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1697767712397</span>19 Oct 19:08:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">HtmlParserTest.handlesTagsInTextarea</span><a href="HtmlParserTest_handlesTagsInTextarea_ph.html">HtmlParserTest.handlesTagsInTextarea</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1697767712309</span>19 Oct 19:08:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">HtmlParserTest.createsStructureFromBodySnippet</span><a href="HtmlParserTest_createsStructureFromBodySnippet_2g.html">HtmlParserTest.createsStructureFromBodySnippet</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1697767711831</span>19 Oct 19:08:31</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">HtmlParserTest.tracksErrorsWhenRequested</span><a href="HtmlParserTest_tracksErrorsWhenRequested_n5.html">HtmlParserTest.tracksErrorsWhenRequested</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1697767712405</span>19 Oct 19:08:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">HtmlParserTest.testSpaceAfterTag</span><a href="HtmlParserTest_testSpaceAfterTag_g5.html">HtmlParserTest.testSpaceAfterTag</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1697767711829</span>19 Oct 19:08:31</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">HtmlParserTest.reconstructFormattingElements</span><a href="HtmlParserTest_reconstructFormattingElements_50.html">HtmlParserTest.reconstructFormattingElements</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1697767712272</span>19 Oct 19:08:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">HtmlParserTest.createsFormElements</span><a href="HtmlParserTest_createsFormElements_56.html">HtmlParserTest.createsFormElements</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1697767712290</span>19 Oct 19:08:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">HtmlParserTest.handlesUnclosedAnchors</span><a href="HtmlParserTest_handlesUnclosedAnchors_8m.html">HtmlParserTest.handlesUnclosedAnchors</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1697767712406</span>19 Oct 19:08:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">HtmlParserTest.createsDocumentStructure</span><a href="HtmlParserTest_createsDocumentStructure_cg.html">HtmlParserTest.createsDocumentStructure</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1697767712272</span>19 Oct 19:08:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">HtmlParserTest.dropsDuplicateAttributes</span><a href="HtmlParserTest_dropsDuplicateAttributes_md.html">HtmlParserTest.dropsDuplicateAttributes</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1697767712262</span>19 Oct 19:08:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">HtmlParserTest.handlesKnownEmptyBlocks</span><a href="HtmlParserTest_handlesKnownEmptyBlocks_ob.html">HtmlParserTest.handlesKnownEmptyBlocks</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1697767712289</span>19 Oct 19:08:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">HtmlParserTest.normalisedBodyAfterContent</span><a href="HtmlParserTest_normalisedBodyAfterContent_31.html">HtmlParserTest.normalisedBodyAfterContent</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1697767712316</span>19 Oct 19:08:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">HtmlParserTest.handleNullContextInParseFragment</span><a href="HtmlParserTest_handleNullContextInParseFragment_s.html">HtmlParserTest.handleNullContextInParseFragment</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1697767712276</span>19 Oct 19:08:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">HtmlParserTest.doesNotCreateImplicitLists</span><a href="HtmlParserTest_doesNotCreateImplicitLists_lv.html">HtmlParserTest.doesNotCreateImplicitLists</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1697767712259</span>19 Oct 19:08:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">HtmlParserTest.caseSensitiveParseTree</span><a href="HtmlParserTest_caseSensitiveParseTree_k7.html">HtmlParserTest.caseSensitiveParseTree</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1697767712278</span>19 Oct 19:08:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">HtmlParserTest.parsesUnterminatedOption</span><a href="HtmlParserTest_parsesUnterminatedOption_91.html">HtmlParserTest.parsesUnterminatedOption</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1697767711821</span>19 Oct 19:08:31</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">HtmlParserTest.handlesXmlDeclarationAsBogusComment</span><a href="HtmlParserTest_handlesXmlDeclarationAsBogusComment_14.html">HtmlParserTest.handlesXmlDeclarationAsBogusComment</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1697767711830</span>19 Oct 19:08:31</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">HtmlParserTest.characterReaderBuffer</span><a href="HtmlParserTest_characterReaderBuffer_p.html">HtmlParserTest.characterReaderBuffer</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1697767712296</span>19 Oct 19:08:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">HtmlParserTest.handlesCdataAcrossBuffer</span><a href="HtmlParserTest_handlesCdataAcrossBuffer_ow.html">HtmlParserTest.handlesCdataAcrossBuffer</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1697767712283</span>19 Oct 19:08:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">HtmlParserTest.selfClosingVoidIsNotAnError</span><a href="HtmlParserTest_selfClosingVoidIsNotAnError_jn.html">HtmlParserTest.selfClosingVoidIsNotAnError</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1697767712400</span>19 Oct 19:08:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">HtmlParserTest.relaxedBaseEntityMatchAndStrictExtendedMatch</span><a href="HtmlParserTest_relaxedBaseEntityMatchAndStrictExtendedMatch_19.html">HtmlParserTest.relaxedBaseEntityMatchAndStrictExtendedMatch</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1697767712409</span>19 Oct 19:08:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">HtmlParserTest.handlesFrames</span><a href="HtmlParserTest_handlesFrames_b9.html">HtmlParserTest.handlesFrames</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1697767712305</span>19 Oct 19:08:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">HtmlParserTest.testNoImagesInNoScriptInHead</span><a href="HtmlParserTest_testNoImagesInNoScriptInHead_8l.html">HtmlParserTest.testNoImagesInNoScriptInHead</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1697767712401</span>19 Oct 19:08:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">HtmlParserTest.discardsNakedTds</span><a href="HtmlParserTest_discardsNakedTds_lx.html">HtmlParserTest.discardsNakedTds</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1697767712413</span>19 Oct 19:08:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">HtmlParserTest.handlesWhitespaceInoDocType</span><a href="HtmlParserTest_handlesWhitespaceInoDocType_bm.html">HtmlParserTest.handlesWhitespaceInoDocType</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1697767712398</span>19 Oct 19:08:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">HtmlParserTest.reconstructFormattingElementsInTable</span><a href="HtmlParserTest_reconstructFormattingElementsInTable_ay.html">HtmlParserTest.reconstructFormattingElementsInTable</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1697767712398</span>19 Oct 19:08:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">HtmlParserTest.commentBeforeHtml</span><a href="HtmlParserTest_commentBeforeHtml_gu.html">HtmlParserTest.commentBeforeHtml</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1697767712287</span>19 Oct 19:08:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">HtmlParserTest.parsesUnterminatedTextarea</span><a href="HtmlParserTest_parsesUnterminatedTextarea_iu.html">HtmlParserTest.parsesUnterminatedTextarea</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1697767712260</span>19 Oct 19:08:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">HtmlParserTest.handlesQuotesInCommentsInScripts</span><a href="HtmlParserTest_handlesQuotesInCommentsInScripts_7i.html">HtmlParserTest.handlesQuotesInCommentsInScripts</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1697767712266</span>19 Oct 19:08:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">HtmlParserTest.handlesNullInData</span><a href="HtmlParserTest_handlesNullInData_eu.html">HtmlParserTest.handlesNullInData</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1697767712423</span>19 Oct 19:08:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">HtmlParserTest.handlesUnclosedRawtextAtEof</span><a href="HtmlParserTest_handlesUnclosedRawtextAtEof_5t.html">HtmlParserTest.handlesUnclosedRawtextAtEof</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1697767712402</span>19 Oct 19:08:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">HtmlParserTest.handlesSolidusAtAttributeEnd</span><a href="HtmlParserTest_handlesSolidusAtAttributeEnd_m9.html">HtmlParserTest.handlesSolidusAtAttributeEnd</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1697767712319</span>19 Oct 19:08:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">HtmlParserTest.preservesSpaceInTextArea</span><a href="HtmlParserTest_preservesSpaceInTextArea_90.html">HtmlParserTest.preservesSpaceInTextArea</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1697767712294</span>19 Oct 19:08:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">HtmlParserTest.handlesSpanInTbody</span><a href="HtmlParserTest_handlesSpanInTbody_d2.html">HtmlParserTest.handlesSpanInTbody</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1697767712317</span>19 Oct 19:08:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">HtmlParserTest.testSpanContents</span><a href="HtmlParserTest_testSpanContents_k5.html">HtmlParserTest.testSpanContents</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1697767712303</span>19 Oct 19:08:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">HtmlParserTest.roundTripsCdata</span><a href="HtmlParserTest_roundTripsCdata_e8.html">HtmlParserTest.roundTripsCdata</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1697767712321</span>19 Oct 19:08:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">HtmlParserTest.handlesUnknownTags</span><a href="HtmlParserTest_handlesUnknownTags_f6.html">HtmlParserTest.handlesUnknownTags</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1697767712313</span>19 Oct 19:08:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">HtmlParserTest.caseInsensitiveParseTree</span><a href="HtmlParserTest_caseInsensitiveParseTree_o3.html">HtmlParserTest.caseInsensitiveParseTree</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1697767712275</span>19 Oct 19:08:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">HtmlParserTest.preservesSpaceInScript</span><a href="HtmlParserTest_preservesSpaceInScript_hg.html">HtmlParserTest.preservesSpaceInScript</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1697767711834</span>19 Oct 19:08:31</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">HtmlParserTest.testSupportsPartiallyNonAsciiTags</span><a href="HtmlParserTest_testSupportsPartiallyNonAsciiTags_he.html">HtmlParserTest.testSupportsPartiallyNonAsciiTags</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1697767711828</span>19 Oct 19:08:31</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">HtmlParserTest.noImplicitFormForTextAreas</span><a href="HtmlParserTest_noImplicitFormForTextAreas_q3.html">HtmlParserTest.noImplicitFormForTextAreas</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1697767712286</span>19 Oct 19:08:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">HtmlParserTest.handlesBaseWithoutHref</span><a href="HtmlParserTest_handlesBaseWithoutHref_y.html">HtmlParserTest.handlesBaseWithoutHref</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1697767712402</span>19 Oct 19:08:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">HtmlParserTest.testUsingSingleQuotesInQueries</span><a href="HtmlParserTest_testUsingSingleQuotesInQueries_gv.html">HtmlParserTest.testUsingSingleQuotesInQueries</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1697767712396</span>19 Oct 19:08:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">HtmlParserTest.handlesNullInComments</span><a href="HtmlParserTest_handlesNullInComments_h9.html">HtmlParserTest.handlesNullInComments</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1697767711824</span>19 Oct 19:08:31</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">HtmlParserTest.handlesKnownEmptyStyle</span><a href="HtmlParserTest_handlesKnownEmptyStyle_pc.html">HtmlParserTest.handlesKnownEmptyStyle</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1697767712293</span>19 Oct 19:08:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">HtmlParserTest.handlesInvalidStartTags</span><a href="HtmlParserTest_handlesInvalidStartTags_ht.html">HtmlParserTest.handlesInvalidStartTags</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1697767712267</span>19 Oct 19:08:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">HtmlParserTest.testRelaxedTags</span><a href="HtmlParserTest_testRelaxedTags_fe.html">HtmlParserTest.testRelaxedTags</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1697767712292</span>19 Oct 19:08:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">HtmlParserTest.testFragment</span><a href="HtmlParserTest_testFragment_e1.html">HtmlParserTest.testFragment</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1697767712279</span>19 Oct 19:08:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">HtmlParserTest.testNormalisesIsIndex</span><a href="HtmlParserTest_testNormalisesIsIndex_7k.html">HtmlParserTest.testNormalisesIsIndex</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1697767711826</span>19 Oct 19:08:31</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">HtmlParserTest.normalisesEmptyDocument</span><a href="HtmlParserTest_normalisesEmptyDocument_7x.html">HtmlParserTest.normalisesEmptyDocument</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1697767712409</span>19 Oct 19:08:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">HtmlParserTest.handlesWhatWgExpensesTableExample</span><a href="HtmlParserTest_handlesWhatWgExpensesTableExample_2c.html">HtmlParserTest.handlesWhatWgExpensesTableExample</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1697767712264</span>19 Oct 19:08:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">HtmlParserTest.commentAtEnd</span><a href="HtmlParserTest_commentAtEnd_mm.html">HtmlParserTest.commentAtEnd</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1697767712389</span>19 Oct 19:08:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">HtmlParserTest.doesNotFindShortestMatchingEntity</span><a href="HtmlParserTest_doesNotFindShortestMatchingEntity_9g.html">HtmlParserTest.doesNotFindShortestMatchingEntity</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1697767712404</span>19 Oct 19:08:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">HtmlParserTest.handlesEscapedData</span><a href="HtmlParserTest_handlesEscapedData_44.html">HtmlParserTest.handlesEscapedData</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1697767712268</span>19 Oct 19:08:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">HtmlParserTest.dropsUnterminatedAttribute</span><a href="HtmlParserTest_dropsUnterminatedAttribute_x.html">HtmlParserTest.dropsUnterminatedAttribute</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1697767711826</span>19 Oct 19:08:31</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">HtmlParserTest.preSkipsFirstNewline</span><a href="HtmlParserTest_preSkipsFirstNewline_62.html">HtmlParserTest.preSkipsFirstNewline</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1697767712388</span>19 Oct 19:08:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">HtmlParserTest.ignoresContentAfterFrameset</span><a href="HtmlParserTest_ignoresContentAfterFrameset_8g.html">HtmlParserTest.ignoresContentAfterFrameset</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1697767712302</span>19 Oct 19:08:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">HtmlParserTest.associatedFormControlsWithDisjointForms</span><a href="HtmlParserTest_associatedFormControlsWithDisjointForms_16.html">HtmlParserTest.associatedFormControlsWithDisjointForms</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1697767712314</span>19 Oct 19:08:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">HtmlParserTest.canPreserveAttributeCase</span><a href="HtmlParserTest_canPreserveAttributeCase_1z.html">HtmlParserTest.canPreserveAttributeCase</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1697767711823</span>19 Oct 19:08:31</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">HtmlParserTest.testHeaderContents</span><a href="HtmlParserTest_testHeaderContents_ax.html">HtmlParserTest.testHeaderContents</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1697767712291</span>19 Oct 19:08:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">HtmlParserTest.normalisesDocument</span><a href="HtmlParserTest_normalisesDocument_4a.html">HtmlParserTest.normalisesDocument</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1697767711830</span>19 Oct 19:08:31</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">HtmlParserTest.handlesTextArea</span><a href="HtmlParserTest_handlesTextArea_m8.html">HtmlParserTest.handlesTextArea</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1697767712386</span>19 Oct 19:08:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">HtmlParserTest.handlesJavadocFont</span><a href="HtmlParserTest_handlesJavadocFont_7n.html">HtmlParserTest.handlesJavadocFont</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1697767712306</span>19 Oct 19:08:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">HtmlParserTest.handlesCdata</span><a href="HtmlParserTest_handlesCdata_e6.html">HtmlParserTest.handlesCdata</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1697767712288</span>19 Oct 19:08:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">HtmlParserTest.handlesInputInTable</span><a href="HtmlParserTest_handlesInputInTable_p1.html">HtmlParserTest.handlesInputInTable</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1697767712266</span>19 Oct 19:08:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">HtmlParserTest.parsesUnterminatedComments</span><a href="HtmlParserTest_parsesUnterminatedComments_59.html">HtmlParserTest.parsesUnterminatedComments</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1697767712276</span>19 Oct 19:08:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">HtmlParserTest.handlesSolidusInA</span><a href="HtmlParserTest_handlesSolidusInA_d7.html">HtmlParserTest.handlesSolidusInA</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1697767712411</span>19 Oct 19:08:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">HtmlParserTest.handlesMisnestedTagsBP</span><a href="HtmlParserTest_handlesMisnestedTagsBP_lw.html">HtmlParserTest.handlesMisnestedTagsBP</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1697767712417</span>19 Oct 19:08:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">HtmlParserTest.canPreserveBothCase</span><a href="HtmlParserTest_canPreserveBothCase_f9.html">HtmlParserTest.canPreserveBothCase</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1697767712418</span>19 Oct 19:08:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">HtmlParserTest.handlesMultiClosingBody</span><a href="HtmlParserTest_handlesMultiClosingBody_33.html">HtmlParserTest.handlesMultiClosingBody</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1697767712421</span>19 Oct 19:08:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">HtmlParserTest.handlesInvalidDoctypes</span><a href="HtmlParserTest_handlesInvalidDoctypes_48.html">HtmlParserTest.handlesInvalidDoctypes</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1697767712308</span>19 Oct 19:08:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">HtmlParserTest.preservedCaseLinksCantNest</span><a href="HtmlParserTest_preservedCaseLinksCantNest_n9.html">HtmlParserTest.preservedCaseLinksCantNest</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1697767711818</span>19 Oct 19:08:31</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">HtmlParserTest.tracksLimitedErrorsWhenRequested</span><a href="HtmlParserTest_tracksLimitedErrorsWhenRequested_4w.html">HtmlParserTest.tracksLimitedErrorsWhenRequested</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1697767712403</span>19 Oct 19:08:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">HtmlParserTest.testTemplateInsideTable</span><a href="HtmlParserTest_testTemplateInsideTable_1l.html">HtmlParserTest.testTemplateInsideTable</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1697767712299</span>19 Oct 19:08:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">HtmlParserTest.handlesBaseTags</span><a href="HtmlParserTest_handlesBaseTags_4r.html">HtmlParserTest.handlesBaseTags</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1697767712302</span>19 Oct 19:08:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">HtmlParserTest.testSupportsNonAsciiTags</span><a href="HtmlParserTest_testSupportsNonAsciiTags_ff.html">HtmlParserTest.testSupportsNonAsciiTags</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1697767712260</span>19 Oct 19:08:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">HtmlParserTest.testInvalidTableContents</span><a href="HtmlParserTest_testInvalidTableContents_nb.html">HtmlParserTest.testInvalidTableContents</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1697767712311</span>19 Oct 19:08:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">HtmlParserTest.canPreserveTagCase</span><a href="HtmlParserTest_canPreserveTagCase_gn.html">HtmlParserTest.canPreserveTagCase</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1697767711833</span>19 Oct 19:08:31</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">HtmlParserTest.handlesTbodyTable</span><a href="HtmlParserTest_handlesTbodyTable_nv.html">HtmlParserTest.handlesTbodyTable</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1697767712315</span>19 Oct 19:08:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">HtmlParserTest.testHandlesDeepSpans</span><a href="HtmlParserTest_testHandlesDeepSpans_eb.html">HtmlParserTest.testHandlesDeepSpans</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1697767712419</span>19 Oct 19:08:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">HtmlParserTest.parsesComments</span><a href="HtmlParserTest_parsesComments_m1.html">HtmlParserTest.parsesComments</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1697767712414</span>19 Oct 19:08:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">HtmlParserTest.handlesUnclosedScriptAtEof</span><a href="HtmlParserTest_handlesUnclosedScriptAtEof_86.html">HtmlParserTest.handlesUnclosedScriptAtEof</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1697767712279</span>19 Oct 19:08:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">HtmlParserTest.handlesUnclosedTitleAtEof</span><a href="HtmlParserTest_handlesUnclosedTitleAtEof_8r.html">HtmlParserTest.handlesUnclosedTitleAtEof</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1697767712318</span>19 Oct 19:08:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">HtmlParserTest.emptyTdTag</span><a href="HtmlParserTest_emptyTdTag_g4.html">HtmlParserTest.emptyTdTag</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1697767712277</span>19 Oct 19:08:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">HtmlParserTest.testAFlowContents</span><a href="HtmlParserTest_testAFlowContents_ab.html">HtmlParserTest.testAFlowContents</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1697767712422</span>19 Oct 19:08:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">HtmlParserTest.parsesSimpleDocument</span><a href="HtmlParserTest_parsesSimpleDocument_4i.html">HtmlParserTest.parsesSimpleDocument</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1697767712258</span>19 Oct 19:08:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">HtmlParserTest.parsesRoughAttributes</span><a href="HtmlParserTest_parsesRoughAttributes_2s.html">HtmlParserTest.parsesRoughAttributes</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1697767712395</span>19 Oct 19:08:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">HtmlParserTest.handlesXmlDeclAndCommentsBeforeDoctype</span><a href="HtmlParserTest_handlesXmlDeclAndCommentsBeforeDoctype_4t.html">HtmlParserTest.handlesXmlDeclAndCommentsBeforeDoctype</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1697767711835</span>19 Oct 19:08:31</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">HtmlParserTest.noErrorsByDefault</span><a href="HtmlParserTest_noErrorsByDefault_hq.html">HtmlParserTest.noErrorsByDefault</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1697767712290</span>19 Oct 19:08:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">HtmlParserTest.handlesUnclosedCdataAtEOF</span><a href="HtmlParserTest_handlesUnclosedCdataAtEOF_av.html">HtmlParserTest.handlesUnclosedCdataAtEOF</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1697767712287</span>19 Oct 19:08:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">HtmlParserTest.cdataNodesAreTextNodes</span><a href="HtmlParserTest_cdataNodesAreTextNodes_kx.html">HtmlParserTest.cdataNodesAreTextNodes</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1697767712301</span>19 Oct 19:08:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">HtmlParserTest.parsesBodyFragment</span><a href="HtmlParserTest_parsesBodyFragment_c2.html">HtmlParserTest.parsesBodyFragment</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1697767712407</span>19 Oct 19:08:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">HtmlParserTest.handlesUnknownNamespaceTags</span><a href="HtmlParserTest_handlesUnknownNamespaceTags_c7.html">HtmlParserTest.handlesUnknownNamespaceTags</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1697767712319</span>19 Oct 19:08:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">HtmlParserTest.handlesDataOnlyTags</span><a href="HtmlParserTest_handlesDataOnlyTags_30.html">HtmlParserTest.handlesDataOnlyTags</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1697767712282</span>19 Oct 19:08:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">HtmlParserTest.retainsAttributesOfDifferentCaseIfSensitive</span><a href="HtmlParserTest_retainsAttributesOfDifferentCaseIfSensitive_54.html">HtmlParserTest.retainsAttributesOfDifferentCaseIfSensitive</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1697767711832</span>19 Oct 19:08:31</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">HtmlParserTest.dropsUnterminatedTag</span><a href="HtmlParserTest_dropsUnterminatedTag_g7.html">HtmlParserTest.dropsUnterminatedTag</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1697767711822</span>19 Oct 19:08:31</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">HtmlParserTest.ignoresDupeEndTrTag</span><a href="HtmlParserTest_ignoresDupeEndTrTag_8p.html">HtmlParserTest.ignoresDupeEndTrTag</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1697767712314</span>19 Oct 19:08:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">HtmlParserTest.noTableDirectInTable</span><a href="HtmlParserTest_noTableDirectInTable_1f.html">HtmlParserTest.noTableDirectInTable</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1697767711827</span>19 Oct 19:08:31</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">HtmlParserTest.handlesUnclosedFormattingElements</span><a href="HtmlParserTest_handlesUnclosedFormattingElements_20.html">HtmlParserTest.handlesUnclosedFormattingElements</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1697767712410</span>19 Oct 19:08:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">HtmlParserTest.handlesMisnestedTagsBI</span><a href="HtmlParserTest_handlesMisnestedTagsBI_1d.html">HtmlParserTest.handlesMisnestedTagsBI</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1697767712416</span>19 Oct 19:08:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">HtmlParserTest.handlesUnclosedTitle</span><a href="HtmlParserTest_handlesUnclosedTitle_g.html">HtmlParserTest.handlesUnclosedTitle</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1697767712274</span>19 Oct 19:08:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">HtmlParserTest.handles0CharacterAsText</span><a href="HtmlParserTest_handles0CharacterAsText_4z.html">HtmlParserTest.handles0CharacterAsText</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1697767712304</span>19 Oct 19:08:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">HtmlParserTest.handlesDeepStack</span><a href="HtmlParserTest_handlesDeepStack_nt.html">HtmlParserTest.handlesDeepStack</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1697767711838</span>19 Oct 19:08:31</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.419</span>0.419</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">HtmlParserTest.handlesUnknownInlineTags</span><a href="HtmlParserTest_handlesUnknownInlineTags_j5.html">HtmlParserTest.handlesUnknownInlineTags</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1697767712407</span>19 Oct 19:08:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">HtmlParserTest.normalisesHeadlessBody</span><a href="HtmlParserTest_normalisesHeadlessBody_dg.html">HtmlParserTest.normalisesHeadlessBody</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1697767711820</span>19 Oct 19:08:31</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">HtmlParserTest.handlesNestedImplicitTable</span><a href="HtmlParserTest_handlesNestedImplicitTable_mv.html">HtmlParserTest.handlesNestedImplicitTable</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1697767712394</span>19 Oct 19:08:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">HtmlParserTest.handlesManyChildren</span><a href="HtmlParserTest_handlesManyChildren_6y.html">HtmlParserTest.handlesManyChildren</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1697767712322</span>19 Oct 19:08:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.064</span>0.064</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">HtmlParserTest.handlesCommentsInTable</span><a href="HtmlParserTest_handlesCommentsInTable_7a.html">HtmlParserTest.handlesCommentsInTable</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1697767712310</span>19 Oct 19:08:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">HtmlParserTest.normalizesDiscordantTags</span><a href="HtmlParserTest_normalizesDiscordantTags_4y.html">HtmlParserTest.normalizesDiscordantTags</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1697767712282</span>19 Oct 19:08:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">HtmlParserTest.findsCharsetInMalformedMeta</span><a href="HtmlParserTest_findsCharsetInMalformedMeta_n1.html">HtmlParserTest.findsCharsetInMalformedMeta</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1697767712420</span>19 Oct 19:08:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">HtmlParserTest.handlesUnexpectedMarkupInTables</span><a href="HtmlParserTest_handlesUnexpectedMarkupInTables_h2.html">HtmlParserTest.handlesUnexpectedMarkupInTables</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1697767712295</span>19 Oct 19:08:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">HtmlParserTest.testHgroup</span><a href="HtmlParserTest_testHgroup_25.html">HtmlParserTest.testHgroup</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1697767712412</span>19 Oct 19:08:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">HtmlParserTest.selfClosingOnNonvoidIsError</span><a href="HtmlParserTest_selfClosingOnNonvoidIsError_8q.html">HtmlParserTest.selfClosingOnNonvoidIsError</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1697767712389</span>19 Oct 19:08:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">HtmlParserTest.convertsImageToImg</span><a href="HtmlParserTest_convertsImageToImg_v.html">HtmlParserTest.convertsImageToImg</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1697767712387</span>19 Oct 19:08:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">HtmlParserTest.testFontFlowContents</span><a href="HtmlParserTest_testFontFlowContents_ad.html">HtmlParserTest.testFontFlowContents</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1697767712415</span>19 Oct 19:08:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">HtmlParserTest.handlesEscapedScript</span><a href="HtmlParserTest_handlesEscapedScript_ae.html">HtmlParserTest.handlesEscapedScript</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1697767712310</span>19 Oct 19:08:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">HtmlParserTest.handlesProtocolRelativeUrl</span><a href="HtmlParserTest_handlesProtocolRelativeUrl_3j.html">HtmlParserTest.handlesProtocolRelativeUrl</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1697767711821</span>19 Oct 19:08:31</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">HtmlParserTest.testSelectWithOption</span><a href="HtmlParserTest_testSelectWithOption_cm.html">HtmlParserTest.testSelectWithOption</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1697767712408</span>19 Oct 19:08:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">HtmlParserTest.testHtmlLowerCase</span><a href="HtmlParserTest_testHtmlLowerCase_7v.html">HtmlParserTest.testHtmlLowerCase</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1697767711837</span>19 Oct 19:08:31</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">HtmlParserTest.handlesNewlinesAndWhitespaceInTag</span><a href="HtmlParserTest_handlesNewlinesAndWhitespaceInTag_b6.html">HtmlParserTest.handlesNewlinesAndWhitespaceInTag</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1697767712281</span>19 Oct 19:08:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">HtmlParserTest.handlesImplicitCaptionClose</span><a href="HtmlParserTest_handlesImplicitCaptionClose_dx.html">HtmlParserTest.handlesImplicitCaptionClose</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1697767712265</span>19 Oct 19:08:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">HtmlParserTest.fallbackToUtfIfCantEncode</span><a href="HtmlParserTest_fallbackToUtfIfCantEncode_e.html">HtmlParserTest.fallbackToUtfIfCantEncode</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1697767712269</span>19 Oct 19:08:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">HtmlParserTest.handlesKnownEmptyNoFrames</span><a href="HtmlParserTest_handlesKnownEmptyNoFrames_ps.html">HtmlParserTest.handlesKnownEmptyNoFrames</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1697767712320</span>19 Oct 19:08:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">HtmlParserTest.handlesBlocksInDefinitions</span><a href="HtmlParserTest_handlesBlocksInDefinitions_oo.html">HtmlParserTest.handlesBlocksInDefinitions</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1697767712422</span>19 Oct 19:08:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">HtmlParserTest.handlesKnownEmptyIframe</span><a href="HtmlParserTest_handlesKnownEmptyIframe_g3.html">HtmlParserTest.handlesKnownEmptyIframe</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1697767712296</span>19 Oct 19:08:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">HtmlParserTest.parsesQuiteRoughAttributes</span><a href="HtmlParserTest_parsesQuiteRoughAttributes_38.html">HtmlParserTest.parsesQuiteRoughAttributes</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1697767712424</span>19 Oct 19:08:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">HtmlParserTest.handlesCdataInScript</span><a href="HtmlParserTest_handlesCdataInScript_68.html">HtmlParserTest.handlesCdataInScript</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1697767712273</span>19 Oct 19:08:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+
+    </tbody>
+</table>
+
+    </div> <!-- tabs-pane -->
+</div> <!-- aui-tabs horizontal-tabs -->
+
+                        </div> <!-- class="aui-page-panel-content-clover" -->
+                    <footer id="footer" role="contentinfo">
+    <section class="footer-body">
+        <ul>
+            <li>
+                Report generated by <a target="_new" href="http://openclover.org">OpenClover</a> v 4.2.0
+                on Thu Oct 19 2023 19:08:34 PDT using coverage data from Thu Oct 19 2023 19:08:32 PDT.
+            </li>
+        </ul>
+        <ul>
+            <li>Clover free edition. </li>
+        </ul>
+    </section>
+</footer>                </section> <!-- class="aui-page-panel-content" -->
+            </div> <!-- class="aui-page-panel-inner" -->
+        </div> <!-- class="aui-page-panel" -->
+    </div> <!-- id="page" -->
+</body>
+</html>

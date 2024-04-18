@@ -1,0 +1,1002 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    
+    
+    <link rel="SHORTCUT ICON" href="img/clover.ico" />
+
+    <link rel="stylesheet" href="aui/css/aui.min.css" media="all"/>
+    <link rel="stylesheet" href="aui/css/aui-experimental.min.css" media="all"/>
+    <!--[if IE 9]><link rel="stylesheet" href="aui/css/aui-ie9.min.css" media="all"/><![endif]-->
+
+    <style type="text/css" media="all">
+        @import url('style.css');
+        @import url('tree.css');
+        
+    </style>
+
+    <script src="jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="aui/js/aui.min.js" type="text/javascript"></script>
+    <script src="aui/js/aui-experimental.min.js" type="text/javascript"></script>
+    <script src="aui/js/aui-soy.min.js" type="text/javascript"></script>
+
+    <script src="package-nodes-tree.js" type="text/javascript"></script>
+    <script src="clover-tree.js" type="text/javascript"></script>
+    <script src="clover.js" type="text/javascript"></script>
+    <script src="clover-descriptions.js" type="text/javascript"></script>
+    <script src="cloud.js" type="text/javascript"></script>
+
+            <title>jsoup Java HTML Parser 1.12.2-SNAPSHOT</title>
+    </head>
+
+<body onresize="processTreeMapDashJson(treeMapJson);" >
+    <div id="page">
+        
+        
+
+
+<header id="header" role="banner">
+    <nav class="aui-header aui-dropdown2-trigger-group" role="navigation">
+        <div class="aui-header-inner">
+            <div class="aui-header-primary">
+                <h1 id="logo" class="aui-header-logo aui-header-logo-clover">
+                    <a href="http://openclover.org" title="Visit OpenClover home page"><span class="aui-header-logo-device">OpenClover</span></a>
+                </h1>
+                            </div>
+            <div class="aui-header-secondary">
+                <ul class="aui-nav">
+                    <li id="system-help-menu">
+                        <a class="aui-nav-link" title="Open online documentation" target="_blank"
+                           href="http://openclover.org/documentation">
+                            <span class="aui-icon aui-icon-small aui-iconfont-help">&#160;Help</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+        
+        <div class="aui-page-panel">
+            <div class="aui-page-panel-inner">
+                <div class="aui-page-panel-nav aui-page-panel-nav-clover">
+                    
+
+<div class="aui-page-header-inner" style="margin-bottom: 20px;">
+    <div class="aui-page-header-image">
+                <div class="aui-avatar aui-avatar-large aui-avatar-project">
+            <div class="aui-avatar-inner">
+                                    <img src="img/clover_logo_large.png" alt="Clover icon"/>
+                            </div>
+        </div>
+            </div>
+    <div class="aui-page-header-main" >
+        <h1>
+                                        jsoup Java HTML Parser 1.12.2-SNAPSHOT
+                                </h1>
+    </div>
+</div>
+
+<nav class="aui-navgroup aui-navgroup-vertical">
+    <div class="aui-navgroup-inner">
+                                            <ul class="aui-nav">
+                <li class="aui-nav-selected">
+                    <a href="dashboard.html">Project overview</a>
+                </li>
+            </ul>
+        
+                <div class="aui-nav-heading packages-nav-heading">
+            <strong>Packages</strong>
+        </div>
+        <div class="aui-nav project-packages">
+            <form method="get" action="#" class="aui package-filter-container">
+                <input type="text" autocomplete="off" class="package-filter text"
+                       placeholder="Type to filter packages..." name="package-filter" id="package-filter"
+                       title="Start typing package name (or part of the name) to search through the tree. Use arrow keys and the Enter key to navigate."/>
+            </form>
+            <p class="package-filter-no-results-message hidden">
+                <small>No results found.</small>
+            </p>
+                                                  <div class="packages-tree-wrapper" data-root-relative="" data-package-name="">
+                <div class="packages-tree-container"></div>
+                <div class="clover-packages-lozenges"></div>
+            </div>
+        </div>
+        
+            </div>
+</nav>                </div>
+                <section class="aui-page-panel-content">
+                    <div class="aui-page-panel-content-clover">
+
+                    
+                    <ol class="aui-nav aui-nav-breadcrumbs">
+            
+        <li><a href="dashboard.html">Project Clover database Thu Oct 19 2023 19:08:27 PDT</a></li>
+    </ol>
+    
+<h1 class="aui-h2-clover">
+            Project overview
+    </h1>
+<div class="aui-tabs horizontal-tabs">
+        <ul class="tabs-menu">
+            <li class="menu-item active-tab">
+            <a href="dashboard.html">Dashboard</a>
+        </li>
+                <li class="menu-item ">
+            <a href="pkg-summary.html"><strong>Application code</strong></a>
+        </li>
+                <li class="menu-item ">
+            <a href="testsrc-pkg-summary.html"><strong>Test code</strong></a>
+        </li>
+        <li class="menu-item ">
+            <a href="test-pkg-summary.html"><strong>Test results</strong></a>
+        </li>
+                <li class="menu-item ">
+            <a href="top-risks.html"><strong>Top risks</strong></a>
+        </li>
+        <li class="menu-item ">
+            <a href="quick-wins.html"><strong>Quick wins</strong></a>
+        </li>
+                                                <li class="menu-item ">
+                <a href="treemap.html"><strong>Coverage tree map</strong></a>
+            </li>
+            </ul>
+    <div class="tabs-pane active-pane" id="tabs-first">
+
+        <div>&#160;</div>
+
+
+
+
+
+
+<div class="aui-group">
+    <div class="aui-item">
+        <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                
+                <h3>
+                    Code coverage
+                    <small style="float:right; font-weight: normal">
+                        150 classes,
+                        8,228 /
+                        10,562 elements
+                    </small>
+                </h3>
+            </header>
+            <div class="dashboard-widget-content">
+                <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.7790191</span>77.9%</div><div style="display: table-cell">
+ <div title="77.9% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:77.9%"></div></div></div></div>
+                <p><a href="pkg-summary.html">See more</a></p>
+            </div>
+        </div>
+
+        <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>
+                    Test results
+                    <small style="float:right; font-weight: normal">
+                        941 /
+                        941 tests
+                        1.11 secs
+                    </small>
+                </h3>
+            </header>
+            <div class="dashboard-widget-content">
+                                    
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>                                <p><a href="test-pkg-summary.html">See more</a></p>
+            </div>
+        </div>
+
+        <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>Code metrics</h3>
+            </header>
+                         
+
+<div id="$statsId" class="aui-item" style="display: ${display}">
+<div style="display: table">
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of branches in this project">Branches:</label></div>
+        <div class="stats-box-value">2,392</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of statements in this project">Statements:</label></div>
+        <div class="stats-box-value">6,843</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of methods in this project">Methods:</label></div>
+        <div class="stats-box-value">1,327</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of classes in this project">Classes:</label></div>
+        <div class="stats-box-value">150</div>
+    </div>
+            <div class="stats-box">
+            <div class="stats-box-label"><label title="Total number of files in this project">Files:</label></div>
+            <div class="stats-box-value">61</div>
+        </div>
+                <div class="stats-box">
+            <div class="stats-box-label"><label title="Total number of packages in this project">Packages:</label></div>
+            <div class="stats-box-value">8</div>
+        </div>
+        <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of lines of code in this project">LOC:</label></div>
+        <div class="stats-box-value">18,345</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of non-comment lines of code in this project">NCLOC:</label></div>
+        <div class="stats-box-value">12,122</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Cyclomatic complexity is the number of paths in this project">Total complexity:</label></div>
+        <div class="stats-box-value">3,133</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label">
+            <label title="Complexity density is the complexity divided by the number of statements in this project">Complexity density:</label>
+        </div>
+        <div class="stats-box-value">0.46</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of statements per method.">Statements/Method:</label></div>
+        <div class="stats-box-value">5.16</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of methods per class.">Methods/Class:</label></div>
+        <div class="stats-box-value">8.85</div>
+    </div>
+            <div class="stats-box">
+            <div class="stats-box-label"><label title="Number of classes per package.">Classes/Package:</label></div>
+            <div class="stats-box-value">18.75</div>
+        </div>
+        <div class="stats-box">
+        <div class="stats-box-label"><label title="Complexity divided by the number of methods in this project">Average method complexity:</label></div>
+        <div class="stats-box-value">2.36</div>
+    </div>
+</div>
+
+</div>        </div>
+
+                <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>Class Coverage Distribution</h3>
+            </header>
+            <div class="dashboard-widget-content">
+                <div style="text-align: center">                     <img src="img/classDistrubutionChart.png" alt="img/classDistrubutionChart.png" usemap="#classDistrubutionChart.png"/>
+                </div>
+                <map id="classDistrubutionChart.png" name="classDistrubutionChart.png">
+<area shape="rect" coords="288,15,310,205" title="51 classes have 91-100% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="263,108,285,205" title="26 classes have 81-90% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="238,161,260,205" title="12 classes have 71-80% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="213,116,235,205" title="24 classes have 61-70% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="188,176,210,205" title="8 classes have 51-60% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="163,179,185,205" title="7 classes have 41-50% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="138,202,160,205" title="1 class has 31-40% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="63,202,85,205" title="1 class has 1-10% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="38,179,60,205" title="7 classes have 0% coverage" alt="" nohref="nohref"/>
+</map>
+            </div>
+        </div>
+        
+                <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>Class Complexity</h3>
+            </header>
+            <div class="dashboard-widget-content">
+                <div style="text-align: center">
+                    <img src="img/classComplexityChart.png" alt="img/classComplexityChart.png" usemap="#classComplexityChart.png"/>
+                </div>
+                <map id="classComplexityChart.png" name="classComplexityChart.png">
+<area shape="poly" coords="54,207,51,210,49,207,51,205,54,207,54,207" title="Complexity: 2; Coverage: 0%; Class: Wikipedia" alt="" href="org/jsoup/examples/Wikipedia.html#Wikipedia"/>
+<area shape="poly" coords="54,206,51,208,49,206,51,203,54,206,54,206" title="Complexity: 5; Coverage: 0%; Class: ListLinks" alt="" href="org/jsoup/examples/ListLinks.html#ListLinks"/>
+<area shape="poly" coords="54,200,51,202,49,200,51,197,54,200,54,200" title="Complexity: 18; Coverage: 0%; Class: HtmlToPlainText.FormattingVisitor" alt="" href="org/jsoup/examples/HtmlToPlainText.html#HtmlToPlainText.FormattingVisitor"/>
+<area shape="poly" coords="54,206,51,209,49,206,51,204,54,206,54,206" title="Complexity: 4; Coverage: 0%; Class: HtmlToPlainText" alt="" href="org/jsoup/examples/HtmlToPlainText.html#HtmlToPlainText"/>
+<area shape="poly" coords="286,187,284,189,281,187,284,184,286,187,286,187" title="Complexity: 47; Coverage: 95%; Class: StringUtil" alt="" href="org/jsoup/internal/StringUtil.html#StringUtil"/>
+<area shape="poly" coords="257,207,254,209,252,207,254,204,257,207,257,207" title="Complexity: 3; Coverage: 83%; Class: Normalizer" alt="" href="org/jsoup/internal/Normalizer.html#Normalizer"/>
+<area shape="poly" coords="232,198,230,201,227,198,230,196,232,198,232,198" title="Complexity: 22; Coverage: 73%; Class: ConstrainableInputStream" alt="" href="org/jsoup/internal/ConstrainableInputStream.html#ConstrainableInputStream"/>
+<area shape="poly" coords="54,206,51,209,49,206,51,204,54,206,54,206" title="Complexity: 4; Coverage: 0%; Class: HtmlToPlainText" alt="" href="org/jsoup/examples/HtmlToPlainText.html#HtmlToPlainText"/>
+<area shape="poly" coords="215,207,213,209,210,207,213,204,215,207,215,207" title="Complexity: 3; Coverage: 66%; Class: UncheckedIOException" alt="" href="org/jsoup/UncheckedIOException.html#UncheckedIOException"/>
+<area shape="poly" coords="54,206,51,209,49,206,51,204,54,206,54,206" title="Complexity: 4; Coverage: 0%; Class: HtmlToPlainText" alt="" href="org/jsoup/examples/HtmlToPlainText.html#HtmlToPlainText"/>
+<area shape="poly" coords="267,201,264,203,262,201,264,198,267,201,267,201" title="Complexity: 16; Coverage: 87%; Class: Jsoup" alt="" href="org/jsoup/Jsoup.html#Jsoup"/>
+<area shape="poly" coords="54,206,51,209,49,206,51,204,54,206,54,206" title="Complexity: 4; Coverage: 0%; Class: HtmlToPlainText" alt="" href="org/jsoup/examples/HtmlToPlainText.html#HtmlToPlainText"/>
+<area shape="poly" coords="176,207,174,210,171,207,174,205,176,207,176,207" title="Complexity: 2; Coverage: 50%; Class: Connection.Method" alt="" href="org/jsoup/Connection.html#Connection.Method"/>
+<area shape="poly" coords="298,206,296,209,293,206,296,204,298,206,298,206" title="Complexity: 4; Coverage: 100%; Class: StructuralEvaluator.ImmediatePreviousSibling" alt="" href="org/jsoup/select/StructuralEvaluator.html#StructuralEvaluator.ImmediatePreviousSibling"/>
+<area shape="poly" coords="220,205,218,208,215,205,218,203,220,205,220,205" title="Complexity: 6; Coverage: 68%; Class: StructuralEvaluator.PreviousSibling" alt="" href="org/jsoup/select/StructuralEvaluator.html#StructuralEvaluator.PreviousSibling"/>
+<area shape="poly" coords="298,206,296,209,293,206,296,204,298,206,298,206" title="Complexity: 4; Coverage: 100%; Class: StructuralEvaluator.ImmediatePreviousSibling" alt="" href="org/jsoup/select/StructuralEvaluator.html#StructuralEvaluator.ImmediatePreviousSibling"/>
+<area shape="poly" coords="274,205,271,208,269,205,271,203,274,205,274,205" title="Complexity: 6; Coverage: 90%; Class: StructuralEvaluator.Parent" alt="" href="org/jsoup/select/StructuralEvaluator.html#StructuralEvaluator.Parent"/>
+<area shape="poly" coords="215,207,213,209,210,207,213,204,215,207,215,207" title="Complexity: 3; Coverage: 66%; Class: UncheckedIOException" alt="" href="org/jsoup/UncheckedIOException.html#UncheckedIOException"/>
+<area shape="poly" coords="252,206,249,208,247,206,249,203,252,206,252,206" title="Complexity: 5; Coverage: 81%; Class: StructuralEvaluator.Has" alt="" href="org/jsoup/select/StructuralEvaluator.html#StructuralEvaluator.Has"/>
+<area shape="poly" coords="298,208,296,210,293,208,296,205,298,208,298,208" title="Complexity: 1; Coverage: 100%; Class: StructuralEvaluator.Root" alt="" href="org/jsoup/select/StructuralEvaluator.html#StructuralEvaluator.Root"/>
+<area shape="poly" coords="298,208,296,210,293,208,296,205,298,208,298,208" title="Complexity: 1; Coverage: 100%; Class: StructuralEvaluator.Root" alt="" href="org/jsoup/select/StructuralEvaluator.html#StructuralEvaluator.Root"/>
+<area shape="poly" coords="286,204,284,206,281,204,284,201,286,204,286,204" title="Complexity: 9; Coverage: 95%; Class: Selector" alt="" href="org/jsoup/select/Selector.html#Selector"/>
+<area shape="poly" coords="294,166,291,169,289,166,291,164,294,166,294,166" title="Complexity: 93; Coverage: 98%; Class: QueryParser" alt="" href="org/jsoup/select/QueryParser.html#QueryParser"/>
+<area shape="poly" coords="267,196,264,198,262,196,264,193,267,196,267,196" title="Complexity: 27; Coverage: 87%; Class: NodeTraversor" alt="" href="org/jsoup/select/NodeTraversor.html#NodeTraversor"/>
+<area shape="poly" coords="259,207,257,209,254,207,257,204,259,207,259,207" title="Complexity: 3; Coverage: 84%; Class: Evaluator.MatchText" alt="" href="org/jsoup/select/Evaluator.html#Evaluator.MatchText"/>
+<area shape="poly" coords="227,207,225,209,222,207,225,204,227,207,227,207" title="Complexity: 3; Coverage: 71%; Class: Evaluator.MatchesOwn" alt="" href="org/jsoup/select/Evaluator.html#Evaluator.MatchesOwn"/>
+<area shape="poly" coords="227,207,225,209,222,207,225,204,227,207,227,207" title="Complexity: 3; Coverage: 71%; Class: Evaluator.MatchesOwn" alt="" href="org/jsoup/select/Evaluator.html#Evaluator.MatchesOwn"/>
+<area shape="poly" coords="215,207,213,209,210,207,213,204,215,207,215,207" title="Complexity: 3; Coverage: 66%; Class: UncheckedIOException" alt="" href="org/jsoup/UncheckedIOException.html#UncheckedIOException"/>
+<area shape="poly" coords="215,207,213,209,210,207,213,204,215,207,215,207" title="Complexity: 3; Coverage: 66%; Class: UncheckedIOException" alt="" href="org/jsoup/UncheckedIOException.html#UncheckedIOException"/>
+<area shape="poly" coords="215,207,213,209,210,207,213,204,215,207,215,207" title="Complexity: 3; Coverage: 66%; Class: UncheckedIOException" alt="" href="org/jsoup/UncheckedIOException.html#UncheckedIOException"/>
+<area shape="poly" coords="298,208,296,210,293,208,296,205,298,208,298,208" title="Complexity: 1; Coverage: 100%; Class: StructuralEvaluator.Root" alt="" href="org/jsoup/select/StructuralEvaluator.html#StructuralEvaluator.Root"/>
+<area shape="poly" coords="249,206,247,208,244,206,247,203,249,206,249,206" title="Complexity: 5; Coverage: 80%; Class: Evaluator.IsEmpty" alt="" href="org/jsoup/select/Evaluator.html#Evaluator.IsEmpty"/>
+<area shape="poly" coords="267,206,264,208,262,206,264,203,267,206,267,206" title="Complexity: 5; Coverage: 87%; Class: Evaluator.IsOnlyOfType" alt="" href="org/jsoup/select/Evaluator.html#Evaluator.IsOnlyOfType"/>
+<area shape="poly" coords="200,207,198,210,195,207,198,205,200,207,200,207" title="Complexity: 2; Coverage: 60%; Class: Evaluator.IsOnlyChild" alt="" href="org/jsoup/select/Evaluator.html#Evaluator.IsOnlyChild"/>
+<area shape="poly" coords="227,207,225,209,222,207,225,204,227,207,227,207" title="Complexity: 3; Coverage: 71%; Class: Evaluator.MatchesOwn" alt="" href="org/jsoup/select/Evaluator.html#Evaluator.MatchesOwn"/>
+<area shape="poly" coords="200,207,198,210,195,207,198,205,200,207,200,207" title="Complexity: 2; Coverage: 60%; Class: Evaluator.IsOnlyChild" alt="" href="org/jsoup/select/Evaluator.html#Evaluator.IsOnlyChild"/>
+<area shape="poly" coords="264,206,262,208,259,206,262,203,264,206,264,206" title="Complexity: 5; Coverage: 86%; Class: Evaluator.IsNthLastOfType" alt="" href="org/jsoup/select/Evaluator.html#Evaluator.IsNthLastOfType"/>
+<area shape="poly" coords="269,206,267,208,264,206,267,203,269,206,269,206" title="Complexity: 5; Coverage: 88%; Class: Evaluator.IsNthOfType" alt="" href="org/jsoup/select/Evaluator.html#Evaluator.IsNthOfType"/>
+<area shape="poly" coords="215,207,213,209,210,207,213,204,215,207,215,207" title="Complexity: 3; Coverage: 66%; Class: UncheckedIOException" alt="" href="org/jsoup/UncheckedIOException.html#UncheckedIOException"/>
+<area shape="poly" coords="215,207,213,209,210,207,213,204,215,207,215,207" title="Complexity: 3; Coverage: 66%; Class: UncheckedIOException" alt="" href="org/jsoup/UncheckedIOException.html#UncheckedIOException"/>
+<area shape="poly" coords="188,204,186,206,183,204,186,201,188,204,188,204" title="Complexity: 9; Coverage: 55%; Class: Evaluator.CssNthEvaluator" alt="" href="org/jsoup/select/Evaluator.html#Evaluator.CssNthEvaluator"/>
+<area shape="poly" coords="176,207,174,210,171,207,174,205,176,207,176,207" title="Complexity: 2; Coverage: 50%; Class: Connection.Method" alt="" href="org/jsoup/Connection.html#Connection.Method"/>
+<area shape="poly" coords="176,207,174,210,171,207,174,205,176,207,176,207" title="Complexity: 2; Coverage: 50%; Class: Connection.Method" alt="" href="org/jsoup/Connection.html#Connection.Method"/>
+<area shape="poly" coords="200,207,198,210,195,207,198,205,200,207,200,207" title="Complexity: 2; Coverage: 60%; Class: Evaluator.IsOnlyChild" alt="" href="org/jsoup/select/Evaluator.html#Evaluator.IsOnlyChild"/>
+<area shape="poly" coords="215,207,213,209,210,207,213,204,215,207,215,207" title="Complexity: 3; Coverage: 66%; Class: UncheckedIOException" alt="" href="org/jsoup/UncheckedIOException.html#UncheckedIOException"/>
+<area shape="poly" coords="215,207,213,209,210,207,213,204,215,207,215,207" title="Complexity: 3; Coverage: 66%; Class: UncheckedIOException" alt="" href="org/jsoup/UncheckedIOException.html#UncheckedIOException"/>
+<area shape="poly" coords="215,207,213,209,210,207,213,204,215,207,215,207" title="Complexity: 3; Coverage: 66%; Class: UncheckedIOException" alt="" href="org/jsoup/UncheckedIOException.html#UncheckedIOException"/>
+<area shape="poly" coords="176,207,174,210,171,207,174,205,176,207,176,207" title="Complexity: 2; Coverage: 50%; Class: Connection.Method" alt="" href="org/jsoup/Connection.html#Connection.Method"/>
+<area shape="poly" coords="298,206,296,208,293,206,296,203,298,206,298,206" title="Complexity: 5; Coverage: 100%; Class: Evaluator.AttributeKeyPair" alt="" href="org/jsoup/select/Evaluator.html#Evaluator.AttributeKeyPair"/>
+<area shape="poly" coords="227,207,225,209,222,207,225,204,227,207,227,207" title="Complexity: 3; Coverage: 71%; Class: Evaluator.MatchesOwn" alt="" href="org/jsoup/select/Evaluator.html#Evaluator.MatchesOwn"/>
+<area shape="poly" coords="215,207,213,209,210,207,213,204,215,207,215,207" title="Complexity: 3; Coverage: 66%; Class: UncheckedIOException" alt="" href="org/jsoup/UncheckedIOException.html#UncheckedIOException"/>
+<area shape="poly" coords="215,207,213,209,210,207,213,204,215,207,215,207" title="Complexity: 3; Coverage: 66%; Class: UncheckedIOException" alt="" href="org/jsoup/UncheckedIOException.html#UncheckedIOException"/>
+<area shape="poly" coords="215,207,213,209,210,207,213,204,215,207,215,207" title="Complexity: 3; Coverage: 66%; Class: UncheckedIOException" alt="" href="org/jsoup/UncheckedIOException.html#UncheckedIOException"/>
+<area shape="poly" coords="215,207,213,209,210,207,213,204,215,207,215,207" title="Complexity: 3; Coverage: 66%; Class: UncheckedIOException" alt="" href="org/jsoup/UncheckedIOException.html#UncheckedIOException"/>
+<area shape="poly" coords="215,207,213,209,210,207,213,204,215,207,215,207" title="Complexity: 3; Coverage: 66%; Class: UncheckedIOException" alt="" href="org/jsoup/UncheckedIOException.html#UncheckedIOException"/>
+<area shape="poly" coords="259,206,257,209,254,206,257,204,259,206,259,206" title="Complexity: 4; Coverage: 84%; Class: Evaluator.AttributeStarting" alt="" href="org/jsoup/select/Evaluator.html#Evaluator.AttributeStarting"/>
+<area shape="poly" coords="215,207,213,209,210,207,213,204,215,207,215,207" title="Complexity: 3; Coverage: 66%; Class: UncheckedIOException" alt="" href="org/jsoup/UncheckedIOException.html#UncheckedIOException"/>
+<area shape="poly" coords="298,207,296,209,293,207,296,204,298,207,298,207" title="Complexity: 3; Coverage: 100%; Class: Evaluator.Class" alt="" href="org/jsoup/select/Evaluator.html#Evaluator.Class"/>
+<area shape="poly" coords="215,207,213,209,210,207,213,204,215,207,215,207" title="Complexity: 3; Coverage: 66%; Class: UncheckedIOException" alt="" href="org/jsoup/UncheckedIOException.html#UncheckedIOException"/>
+<area shape="poly" coords="215,207,213,209,210,207,213,204,215,207,215,207" title="Complexity: 3; Coverage: 66%; Class: UncheckedIOException" alt="" href="org/jsoup/UncheckedIOException.html#UncheckedIOException"/>
+<area shape="poly" coords="298,207,296,209,293,207,296,204,298,207,298,207" title="Complexity: 3; Coverage: 100%; Class: Evaluator.Class" alt="" href="org/jsoup/select/Evaluator.html#Evaluator.Class"/>
+<area shape="poly" coords="298,208,296,210,293,208,296,205,298,208,298,208" title="Complexity: 1; Coverage: 100%; Class: StructuralEvaluator.Root" alt="" href="org/jsoup/select/StructuralEvaluator.html#StructuralEvaluator.Root"/>
+<area shape="poly" coords="289,175,286,178,284,175,286,173,289,175,289,175" title="Complexity: 73; Coverage: 96%; Class: Elements" alt="" href="org/jsoup/select/Elements.html#Elements"/>
+<area shape="poly" coords="262,204,259,206,257,204,259,201,262,204,262,204" title="Complexity: 9; Coverage: 85%; Class: CombiningEvaluator.Or" alt="" href="org/jsoup/select/CombiningEvaluator.html#CombiningEvaluator.Or"/>
+<area shape="poly" coords="298,205,296,208,293,205,296,203,298,205,298,205" title="Complexity: 6; Coverage: 100%; Class: CombiningEvaluator.And" alt="" href="org/jsoup/select/CombiningEvaluator.html#CombiningEvaluator.And"/>
+<area shape="poly" coords="281,205,279,208,276,205,279,203,281,205,281,205" title="Complexity: 6; Coverage: 93%; Class: CombiningEvaluator" alt="" href="org/jsoup/select/CombiningEvaluator.html#CombiningEvaluator"/>
+<area shape="poly" coords="298,206,296,208,293,206,296,203,298,206,298,206" title="Complexity: 5; Coverage: 100%; Class: Evaluator.AttributeKeyPair" alt="" href="org/jsoup/select/Evaluator.html#Evaluator.AttributeKeyPair"/>
+<area shape="poly" coords="298,206,296,208,293,206,296,203,298,206,298,206" title="Complexity: 5; Coverage: 100%; Class: Evaluator.AttributeKeyPair" alt="" href="org/jsoup/select/Evaluator.html#Evaluator.AttributeKeyPair"/>
+<area shape="poly" coords="269,207,267,209,264,207,267,204,269,207,269,207" title="Complexity: 3; Coverage: 88%; Class: Collector" alt="" href="org/jsoup/select/Collector.html#Collector"/>
+<area shape="poly" coords="286,195,284,197,281,195,284,192,286,195,286,195" title="Complexity: 30; Coverage: 95%; Class: XmlTreeBuilder" alt="" href="org/jsoup/parser/XmlTreeBuilder.html#XmlTreeBuilder"/>
+<area shape="poly" coords="284,202,281,204,279,202,281,199,284,202,284,202" title="Complexity: 14; Coverage: 94%; Class: TreeBuilder" alt="" href="org/jsoup/parser/TreeBuilder.html#TreeBuilder"/>
+<area shape="poly" coords="208,27,205,30,203,27,205,25,208,27,208,27" title="Complexity: 403; Coverage: 63%; Class: TokeniserState" alt="" href="org/jsoup/parser/TokeniserState.html#TokeniserState"/>
+<area shape="poly" coords="274,177,271,179,269,177,271,174,274,177,274,177" title="Complexity: 70; Coverage: 90%; Class: Tokeniser" alt="" href="org/jsoup/parser/Tokeniser.html#Tokeniser"/>
+<area shape="poly" coords="254,170,252,173,249,170,252,168,254,170,254,170" title="Complexity: 84; Coverage: 82%; Class: TokenQueue" alt="" href="org/jsoup/parser/TokenQueue.html#TokenQueue"/>
+<area shape="poly" coords="298,207,296,210,293,207,296,205,298,207,298,207" title="Complexity: 2; Coverage: 100%; Class: Token.EOF" alt="" href="org/jsoup/parser/Token.html#Token.EOF"/>
+<area shape="poly" coords="200,207,198,210,195,207,198,205,200,207,200,207" title="Complexity: 2; Coverage: 60%; Class: Evaluator.IsOnlyChild" alt="" href="org/jsoup/select/Evaluator.html#Evaluator.IsOnlyChild"/>
+<area shape="poly" coords="298,206,296,208,293,206,296,203,298,206,298,206" title="Complexity: 5; Coverage: 100%; Class: Evaluator.AttributeKeyPair" alt="" href="org/jsoup/select/Evaluator.html#Evaluator.AttributeKeyPair"/>
+<area shape="poly" coords="249,206,247,209,244,206,247,204,249,206,249,206" title="Complexity: 4; Coverage: 80%; Class: Token.Comment" alt="" href="org/jsoup/parser/Token.html#Token.Comment"/>
+<area shape="poly" coords="200,207,198,210,195,207,198,205,200,207,200,207" title="Complexity: 2; Coverage: 60%; Class: Evaluator.IsOnlyChild" alt="" href="org/jsoup/select/Evaluator.html#Evaluator.IsOnlyChild"/>
+<area shape="poly" coords="298,205,296,208,293,205,296,203,298,205,298,205" title="Complexity: 6; Coverage: 100%; Class: CombiningEvaluator.And" alt="" href="org/jsoup/select/CombiningEvaluator.html#CombiningEvaluator.And"/>
+<area shape="poly" coords="289,195,286,198,284,195,286,193,289,195,289,195" title="Complexity: 29; Coverage: 96%; Class: Token.Tag" alt="" href="org/jsoup/parser/Token.html#Token.Tag"/>
+<area shape="poly" coords="298,205,296,207,293,205,296,202,298,205,298,205" title="Complexity: 7; Coverage: 100%; Class: Token.Doctype" alt="" href="org/jsoup/parser/Token.html#Token.Doctype"/>
+<area shape="poly" coords="289,201,286,203,284,201,286,198,289,201,289,201" title="Complexity: 16; Coverage: 96%; Class: Token" alt="" href="org/jsoup/parser/Token.html#Token"/>
+<area shape="poly" coords="218,189,215,191,213,189,215,186,218,189,218,189" title="Complexity: 43; Coverage: 67%; Class: Tag" alt="" href="org/jsoup/parser/Tag.html#Tag"/>
+<area shape="poly" coords="257,198,254,201,252,198,254,196,257,198,257,198" title="Complexity: 22; Coverage: 83%; Class: Parser" alt="" href="org/jsoup/parser/Parser.html#Parser"/>
+<area shape="poly" coords="281,204,279,206,276,204,279,201,281,204,281,204" title="Complexity: 10; Coverage: 93%; Class: ParseSettings" alt="" href="org/jsoup/parser/ParseSettings.html#ParseSettings"/>
+<area shape="poly" coords="252,206,249,208,247,206,249,203,252,206,252,206" title="Complexity: 5; Coverage: 81%; Class: StructuralEvaluator.Has" alt="" href="org/jsoup/select/StructuralEvaluator.html#StructuralEvaluator.Has"/>
+<area shape="poly" coords="257,206,254,208,252,206,254,203,257,206,257,206" title="Complexity: 5; Coverage: 83%; Class: ParseError" alt="" href="org/jsoup/parser/ParseError.html#ParseError"/>
+<area shape="poly" coords="237,18,235,20,232,18,235,15,237,18,237,18" title="Complexity: 425; Coverage: 75%; Class: HtmlTreeBuilderState" alt="" href="org/jsoup/parser/HtmlTreeBuilderState.html#HtmlTreeBuilderState"/>
+<area shape="poly" coords="267,130,264,133,262,130,264,128,267,130,267,130" title="Complexity: 174; Coverage: 87%; Class: HtmlTreeBuilder" alt="" href="org/jsoup/parser/HtmlTreeBuilder.html#HtmlTreeBuilder"/>
+<area shape="poly" coords="289,148,286,150,284,148,286,145,289,148,289,148" title="Complexity: 134; Coverage: 96%; Class: CharacterReader" alt="" href="org/jsoup/parser/CharacterReader.html#CharacterReader"/>
+<area shape="poly" coords="294,200,291,202,289,200,291,197,294,200,294,200" title="Complexity: 18; Coverage: 98%; Class: W3CDom.W3CBuilder" alt="" href="org/jsoup/helper/W3CDom.html#W3CDom.W3CBuilder"/>
+<area shape="poly" coords="279,205,276,208,274,205,276,203,279,205,279,205" title="Complexity: 6; Coverage: 92%; Class: W3CDom" alt="" href="org/jsoup/helper/W3CDom.html#W3CDom"/>
+<area shape="poly" coords="264,198,262,200,259,198,262,195,264,198,264,198" title="Complexity: 23; Coverage: 86%; Class: Validate" alt="" href="org/jsoup/helper/Validate.html#Validate"/>
+<area shape="poly" coords="237,202,235,205,232,202,235,200,237,202,237,202" title="Complexity: 13; Coverage: 75%; Class: HttpConnection.KeyVal" alt="" href="org/jsoup/helper/HttpConnection.html#HttpConnection.KeyVal"/>
+<area shape="poly" coords="78,167,76,170,73,167,76,165,78,167,78,167" title="Complexity: 91; Coverage: 10%; Class: HttpConnection.Response" alt="" href="org/jsoup/helper/HttpConnection.html#HttpConnection.Response"/>
+<area shape="poly" coords="137,197,134,199,132,197,134,194,137,197,137,197" title="Complexity: 25; Coverage: 34%; Class: HttpConnection.Request" alt="" href="org/jsoup/helper/HttpConnection.html#HttpConnection.Request"/>
+<area shape="poly" coords="237,188,235,191,232,188,235,186,237,188,237,188" title="Complexity: 44; Coverage: 75%; Class: HttpConnection.Base" alt="" href="org/jsoup/helper/HttpConnection.html#HttpConnection.Base"/>
+<area shape="poly" coords="169,186,166,189,164,186,166,184,169,186,169,186" title="Complexity: 48; Coverage: 47%; Class: HttpConnection" alt="" href="org/jsoup/helper/HttpConnection.html#HttpConnection"/>
+<area shape="poly" coords="298,208,296,210,293,208,296,205,298,208,298,208" title="Complexity: 1; Coverage: 100%; Class: StructuralEvaluator.Root" alt="" href="org/jsoup/select/StructuralEvaluator.html#StructuralEvaluator.Root"/>
+<area shape="poly" coords="272,181,269,183,267,181,269,178,272,181,272,181" title="Complexity: 61; Coverage: 89%; Class: DataUtil" alt="" href="org/jsoup/helper/DataUtil.html#DataUtil"/>
+<area shape="poly" coords="193,203,191,205,188,203,191,200,193,203,193,203" title="Complexity: 12; Coverage: 57%; Class: ChangeNotifyingArrayList" alt="" href="org/jsoup/helper/ChangeNotifyingArrayList.html#ChangeNotifyingArrayList"/>
+<area shape="poly" coords="225,204,222,206,220,204,222,201,225,204,225,204" title="Complexity: 9; Coverage: 70%; Class: Whitelist.TypedValue" alt="" href="org/jsoup/safety/Whitelist.html#Whitelist.TypedValue"/>
+<area shape="poly" coords="298,207,296,210,293,207,296,205,298,207,298,207" title="Complexity: 2; Coverage: 100%; Class: Token.EOF" alt="" href="org/jsoup/parser/Token.html#Token.EOF"/>
+<area shape="poly" coords="298,207,296,210,293,207,296,205,298,207,298,207" title="Complexity: 2; Coverage: 100%; Class: Token.EOF" alt="" href="org/jsoup/parser/Token.html#Token.EOF"/>
+<area shape="poly" coords="298,207,296,210,293,207,296,205,298,207,298,207" title="Complexity: 2; Coverage: 100%; Class: Token.EOF" alt="" href="org/jsoup/parser/Token.html#Token.EOF"/>
+<area shape="poly" coords="298,207,296,210,293,207,296,205,298,207,298,207" title="Complexity: 2; Coverage: 100%; Class: Token.EOF" alt="" href="org/jsoup/parser/Token.html#Token.EOF"/>
+<area shape="poly" coords="269,187,267,190,264,187,267,185,269,187,269,187" title="Complexity: 46; Coverage: 88%; Class: Whitelist" alt="" href="org/jsoup/safety/Whitelist.html#Whitelist"/>
+<area shape="poly" coords="298,208,296,210,293,208,296,205,298,208,298,208" title="Complexity: 1; Coverage: 100%; Class: StructuralEvaluator.Root" alt="" href="org/jsoup/select/StructuralEvaluator.html#StructuralEvaluator.Root"/>
+<area shape="poly" coords="298,203,296,206,293,203,296,201,298,203,298,203" title="Complexity: 11; Coverage: 100%; Class: Cleaner.CleaningVisitor" alt="" href="org/jsoup/safety/Cleaner.html#Cleaner.CleaningVisitor"/>
+<area shape="poly" coords="298,204,296,207,293,204,296,202,298,204,298,204" title="Complexity: 8; Coverage: 100%; Class: Cleaner" alt="" href="org/jsoup/safety/Cleaner.html#Cleaner"/>
+<area shape="poly" coords="247,202,245,205,242,202,245,200,247,202,247,202" title="Complexity: 13; Coverage: 79%; Class: XmlDeclaration" alt="" href="org/jsoup/nodes/XmlDeclaration.html#XmlDeclaration"/>
+<area shape="poly" coords="215,197,213,199,210,197,213,194,215,197,215,197" title="Complexity: 25; Coverage: 66%; Class: TextNode" alt="" href="org/jsoup/nodes/TextNode.html#TextNode"/>
+<area shape="poly" coords="298,207,296,209,293,207,296,204,298,207,298,207" title="Complexity: 3; Coverage: 100%; Class: Evaluator.Class" alt="" href="org/jsoup/select/Evaluator.html#Evaluator.Class"/>
+<area shape="poly" coords="298,206,296,208,293,206,296,203,298,206,298,206" title="Complexity: 5; Coverage: 100%; Class: Evaluator.AttributeKeyPair" alt="" href="org/jsoup/select/Evaluator.html#Evaluator.AttributeKeyPair"/>
+<area shape="poly" coords="264,205,262,208,259,205,262,203,264,205,264,205" title="Complexity: 6; Coverage: 86%; Class: Node.OuterHtmlVisitor" alt="" href="org/jsoup/nodes/Node.html#Node.OuterHtmlVisitor"/>
+<area shape="poly" coords="284,169,281,172,279,169,281,167,284,169,284,169" title="Complexity: 87; Coverage: 94%; Class: Node" alt="" href="org/jsoup/nodes/Node.html#Node"/>
+<area shape="poly" coords="252,199,249,201,247,199,249,196,252,199,252,199" title="Complexity: 21; Coverage: 81%; Class: LeafNode" alt="" href="org/jsoup/nodes/LeafNode.html#LeafNode"/>
+<area shape="poly" coords="262,199,259,202,257,199,259,197,262,199,262,199" title="Complexity: 19; Coverage: 85%; Class: FormElement" alt="" href="org/jsoup/nodes/FormElement.html#FormElement"/>
+<area shape="poly" coords="298,208,296,210,293,208,296,205,298,208,298,208" title="Complexity: 1; Coverage: 100%; Class: StructuralEvaluator.Root" alt="" href="org/jsoup/select/StructuralEvaluator.html#StructuralEvaluator.Root"/>
+<area shape="poly" coords="298,207,296,209,293,207,296,204,298,207,298,207" title="Complexity: 3; Coverage: 100%; Class: Evaluator.Class" alt="" href="org/jsoup/select/Evaluator.html#Evaluator.Class"/>
+<area shape="poly" coords="269,204,267,207,264,204,267,202,269,204,269,204" title="Complexity: 8; Coverage: 88%; Class: Entities.EscapeMode" alt="" href="org/jsoup/nodes/Entities.html#Entities.EscapeMode"/>
+<area shape="poly" coords="281,188,279,190,276,188,279,185,281,188,281,188" title="Complexity: 45; Coverage: 93%; Class: Entities" alt="" href="org/jsoup/nodes/Entities.html#Entities"/>
+<area shape="poly" coords="298,207,296,210,293,207,296,205,298,207,298,207" title="Complexity: 2; Coverage: 100%; Class: Token.EOF" alt="" href="org/jsoup/parser/Token.html#Token.EOF"/>
+<area shape="poly" coords="291,109,289,111,286,109,289,106,291,109,291,109" title="Complexity: 221; Coverage: 97%; Class: Element" alt="" href="org/jsoup/nodes/Element.html#Element"/>
+<area shape="poly" coords="232,199,230,202,227,199,230,197,232,199,232,199" title="Complexity: 19; Coverage: 73%; Class: DocumentType" alt="" href="org/jsoup/nodes/DocumentType.html#DocumentType"/>
+<area shape="poly" coords="294,199,291,202,289,199,291,197,294,199,294,199" title="Complexity: 19; Coverage: 98%; Class: Document.OutputSettings" alt="" href="org/jsoup/nodes/Document.html#Document.OutputSettings"/>
+<area shape="poly" coords="208,186,205,189,203,186,205,184,208,186,208,186" title="Complexity: 49; Coverage: 63%; Class: Document" alt="" href="org/jsoup/nodes/Document.html#Document"/>
+<area shape="poly" coords="169,204,166,206,164,204,166,201,169,204,169,204" title="Complexity: 9; Coverage: 47%; Class: DataNode" alt="" href="org/jsoup/nodes/DataNode.html#DataNode"/>
+<area shape="poly" coords="257,203,254,206,252,203,254,201,257,203,257,203" title="Complexity: 11; Coverage: 83%; Class: Comment" alt="" href="org/jsoup/nodes/Comment.html#Comment"/>
+<area shape="poly" coords="276,205,274,208,271,205,274,203,276,205,276,205" title="Complexity: 6; Coverage: 91%; Class: CDataNode" alt="" href="org/jsoup/nodes/CDataNode.html#CDataNode"/>
+<area shape="poly" coords="176,207,174,210,171,207,174,205,176,207,176,207" title="Complexity: 2; Coverage: 50%; Class: Connection.Method" alt="" href="org/jsoup/Connection.html#Connection.Method"/>
+<area shape="poly" coords="298,206,296,208,293,206,296,203,298,206,298,206" title="Complexity: 5; Coverage: 100%; Class: Evaluator.AttributeKeyPair" alt="" href="org/jsoup/select/Evaluator.html#Evaluator.AttributeKeyPair"/>
+<area shape="poly" coords="298,207,296,209,293,207,296,204,298,207,298,207" title="Complexity: 3; Coverage: 100%; Class: Evaluator.Class" alt="" href="org/jsoup/select/Evaluator.html#Evaluator.Class"/>
+<area shape="poly" coords="298,206,296,209,293,206,296,204,298,206,298,206" title="Complexity: 4; Coverage: 100%; Class: StructuralEvaluator.ImmediatePreviousSibling" alt="" href="org/jsoup/select/StructuralEvaluator.html#StructuralEvaluator.ImmediatePreviousSibling"/>
+<area shape="poly" coords="281,175,279,177,276,175,279,172,281,175,281,175" title="Complexity: 74; Coverage: 93%; Class: Attributes" alt="" href="org/jsoup/nodes/Attributes.html#Attributes"/>
+<area shape="poly" coords="198,192,196,195,193,192,196,190,198,192,198,192" title="Complexity: 35; Coverage: 59%; Class: Attribute" alt="" href="org/jsoup/nodes/Attribute.html#Attribute"/>
+</map>
+            </div>
+        </div>
+        
+                    <div class="dashboard-widget">
+                <header class="dashboard-widget-header">
+                    <h3>Coverage tree map</h3>
+                </header>
+                <div class="dashboard-widget-content">
+                    <div id="infovis" style="width:100%; height:250px;">
+                        <div id="treemap-loader" style="position:relative;top:50px;">
+                            <p>
+                                Generating Coverage Tree Map. Please wait...
+                            </p>
+                            <p>
+                                <img src="img/ajax-loader.gif" alt="Loading Treemap"/>
+                            </p>
+                        </div>
+                    </div>
+                    <p><a href="treemap.html">See more</a></p>
+                </div>
+
+            </div>
+            </div>
+
+
+    <div class="aui-item">
+        <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>Top 20 project risks</h3>
+            </header>
+            <div class="dashboard-widget-content">
+                
+                                                                <a class="tag" href="org/jsoup/select/QueryParser.html"
+                            style="font-size: 18px;color:#89c495"
+                            title="Average Method Complexity - 4.429 , Coverage - 98.1% ">QueryParser</a>
+                                    
+                                                                <a class="tag" href="org/jsoup/helper/W3CDom.html"
+                            style="font-size: 17px;color:#89c495"
+                            title="Average Method Complexity - 3.6 , Coverage - 98.6% ">W3CDom.W3CBuilder</a>
+                                    
+                                                                <a class="tag" href="org/jsoup/parser/CharacterReader.html"
+                            style="font-size: 17px;color:#89c495"
+                            title="Average Method Complexity - 3.268 , Coverage - 96.2% ">CharacterReader</a>
+                                    
+                                                                <a class="tag" href="org/jsoup/internal/StringUtil.html"
+                            style="font-size: 16px;color:#89c495"
+                            title="Average Method Complexity - 2.765 , Coverage - 96% ">StringUtil</a>
+                                    
+                                                                <a class="tag" href="org/jsoup/nodes/Entities.html"
+                            style="font-size: 16px;color:#89c495"
+                            title="Average Method Complexity - 3.214 , Coverage - 93.1% ">Entities</a>
+                                    
+                                                                <a class="tag" href="org/jsoup/helper/DataUtil.html"
+                            style="font-size: 19px;color:#14892c"
+                            title="Average Method Complexity - 5.083 , Coverage - 89.9% ">DataUtil</a>
+                                    
+                                                                <a class="tag" href="org/jsoup/parser/XmlTreeBuilder.html"
+                            style="font-size: 15px;color:#89c495"
+                            title="Average Method Complexity - 2.308 , Coverage - 95% ">XmlTreeBuilder</a>
+                                    
+                                                                <a class="tag" href="org/jsoup/select/NodeTraversor.html"
+                            style="font-size: 18px;color:#14892c"
+                            title="Average Method Complexity - 4.5 , Coverage - 87.5% ">NodeTraversor</a>
+                                    
+                                                                <a class="tag" href="org/jsoup/parser/Tokeniser.html"
+                            style="font-size: 16px;color:#14892c"
+                            title="Average Method Complexity - 2.593 , Coverage - 90.2% ">Tokeniser</a>
+                                    
+                                                                <a class="tag" href="org/jsoup/nodes/Element.html"
+                            style="font-size: 14px;color:#89c495"
+                            title="Average Method Complexity - 1.873 , Coverage - 97.1% ">Element</a>
+                                    
+                                                                <a class="tag" href="org/jsoup/nodes/Attributes.html"
+                            style="font-size: 15px;color:#89c495"
+                            title="Average Method Complexity - 2.114 , Coverage - 93.8% ">Attributes</a>
+                                    
+                                                                <a class="tag" href="org/jsoup/helper/W3CDom.html"
+                            style="font-size: 15px;color:#14892c"
+                            title="Average Method Complexity - 2 , Coverage - 92.6% ">W3CDom</a>
+                                    
+                                                                <a class="tag" href="org/jsoup/safety/Whitelist.html"
+                            style="font-size: 15px;color:#14892c"
+                            title="Average Method Complexity - 2.3 , Coverage - 88.9% ">Whitelist</a>
+                                    
+                                                                <a class="tag" href="org/jsoup/select/Evaluator.html"
+                            style="font-size: 15px;color:#14892c"
+                            title="Average Method Complexity - 2.5 , Coverage - 87.5% ">Evaluator.IsOnlyOfType</a>
+                                    
+                                                                <a class="tag" href="org/jsoup/nodes/FormElement.html"
+                            style="font-size: 16px;color:#14892c"
+                            title="Average Method Complexity - 3.167 , Coverage - 85.3% ">FormElement</a>
+                                    
+                                                                <a class="tag" href="org/jsoup/select/StructuralEvaluator.html"
+                            style="font-size: 15px;color:#14892c"
+                            title="Average Method Complexity - 2 , Coverage - 90.5% ">StructuralEvaluator.Parent</a>
+                                    
+                                                                <a class="tag" href="org/jsoup/parser/Token.html"
+                            style="font-size: 14px;color:#89c495"
+                            title="Average Method Complexity - 1.611 , Coverage - 96.9% ">Token.Tag</a>
+                                    
+                                                                <a class="tag" href="org/jsoup/parser/TreeBuilder.html"
+                            style="font-size: 14px;color:#89c495"
+                            title="Average Method Complexity - 1.75 , Coverage - 94.6% ">TreeBuilder</a>
+                                    
+                                                                <a class="tag" href="org/jsoup/parser/HtmlTreeBuilder.html"
+                            style="font-size: 15px;color:#14892c"
+                            title="Average Method Complexity - 2.289 , Coverage - 87.5% ">HtmlTreeBuilder</a>
+                                    
+                                                                <a class="tag" href="org/jsoup/parser/HtmlTreeBuilderState.html"
+                            style="font-size: 28px;color:#fae1a0"
+                            title="Average Method Complexity - 10.366 , Coverage - 75.4% ">HtmlTreeBuilderState</a>
+                                                    <p><a href="top-risks.html">See more</a></p>
+            </div>
+        </div>
+
+        <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>Most complex packages</h3>
+            </header>
+            <div class="dashboard-widget-content">
+                
+                <table class="aui">
+                                            
+                                                <tr>
+                            <td>1. </td>
+                            <td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.77319586</span>77.3%</div><div style="display: table-cell">
+ <div title="77.3% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:77.3%"></div></div></div></div></td>
+                            <td>
+                                <a href="org/jsoup/parser/pkg-summary.html">org.jsoup.parser</a>
+                                <span class="aui-badge" title="Package complexity">1492</span>
+                            </td>
+                        </tr>
+                                            
+                                                <tr>
+                            <td>2. </td>
+                            <td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.8815363</span>88.2%</div><div style="display: table-cell">
+ <div title="88.2% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:88.2%"></div></div></div></div></td>
+                            <td>
+                                <a href="org/jsoup/nodes/pkg-summary.html">org.jsoup.nodes</a>
+                                <span class="aui-badge" title="Package complexity">695</span>
+                            </td>
+                        </tr>
+                                            
+                                                <tr>
+                            <td>3. </td>
+                            <td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.8981938</span>89.8%</div><div style="display: table-cell">
+ <div title="89.8% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:89.8%"></div></div></div></div></td>
+                            <td>
+                                <a href="org/jsoup/select/pkg-summary.html">org.jsoup.select</a>
+                                <span class="aui-badge" title="Package complexity">387</span>
+                            </td>
+                        </tr>
+                                            
+                                                <tr>
+                            <td>4. </td>
+                            <td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.5271318</span>52.7%</div><div style="display: table-cell">
+ <div title="52.7% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:52.7%"></div></div></div></div></td>
+                            <td>
+                                <a href="org/jsoup/helper/pkg-summary.html">org.jsoup.helper</a>
+                                <span class="aui-badge" title="Package complexity">342</span>
+                            </td>
+                        </tr>
+                                            
+                                                <tr>
+                            <td>5. </td>
+                            <td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.9044944</span>90.4%</div><div style="display: table-cell">
+ <div title="90.4% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:90.4%"></div></div></div></div></td>
+                            <td>
+                                <a href="org/jsoup/safety/pkg-summary.html">org.jsoup.safety</a>
+                                <span class="aui-badge" title="Package complexity">83</span>
+                            </td>
+                        </tr>
+                                    </table>
+            </div>
+        </div>
+
+        <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>Most complex classes</h3>
+            </header>
+            <div class="dashboard-widget-content">
+                <table class="aui">
+                                            
+                                                <tr>
+                            <td>1. </td>
+                            <td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.7544066</span>75.4%</div><div style="display: table-cell">
+ <div title="75.4% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:75.4%"></div></div></div></div></td>
+                            <td>
+                                <a  href="org/jsoup/parser/HtmlTreeBuilderState.html"  title="org.jsoup.parser.HtmlTreeBuilderState">HtmlTreeBuilderState</a>
+                                <span class="aui-badge" title="Class complexity">425</span>
+                            </td>
+                        </tr>
+                                            
+                                                <tr>
+                            <td>2. </td>
+                            <td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.63114184</span>63.1%</div><div style="display: table-cell">
+ <div title="63.1% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:63.1%"></div></div></div></div></td>
+                            <td>
+                                <a  href="org/jsoup/parser/TokeniserState.html"  title="org.jsoup.parser.TokeniserState">TokeniserState</a>
+                                <span class="aui-badge" title="Class complexity">403</span>
+                            </td>
+                        </tr>
+                                            
+                                                <tr>
+                            <td>3. </td>
+                            <td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.97125566</span>97.1%</div><div style="display: table-cell">
+ <div title="97.1% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:97.1%"></div></div></div></div></td>
+                            <td>
+                                <a  href="org/jsoup/nodes/Element.html"  title="org.jsoup.nodes.Element">Element</a>
+                                <span class="aui-badge" title="Class complexity">221</span>
+                            </td>
+                        </tr>
+                                            
+                                                <tr>
+                            <td>4. </td>
+                            <td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.87542665</span>87.5%</div><div style="display: table-cell">
+ <div title="87.5% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:87.5%"></div></div></div></div></td>
+                            <td>
+                                <a  href="org/jsoup/parser/HtmlTreeBuilder.html"  title="org.jsoup.parser.HtmlTreeBuilder">HtmlTreeBuilder</a>
+                                <span class="aui-badge" title="Class complexity">174</span>
+                            </td>
+                        </tr>
+                                            
+                                                <tr>
+                            <td>5. </td>
+                            <td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.96199524</span>96.2%</div><div style="display: table-cell">
+ <div title="96.2% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:96.2%"></div></div></div></div></td>
+                            <td>
+                                <a  href="org/jsoup/parser/CharacterReader.html"  title="org.jsoup.parser.CharacterReader">CharacterReader</a>
+                                <span class="aui-badge" title="Class complexity">134</span>
+                            </td>
+                        </tr>
+                                    </table>
+            </div>
+        </div>
+
+                <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>Least tested methods</h3>
+            </header>
+            <div class="dashboard-widget-content">
+                <table class="aui">
+                                            
+
+                    <tr>
+                        <td align="right">1.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="HttpConnection.Response.writePost(Connection.Request,OutputStream,String)&#160;:&#160;void" href="org/jsoup/helper/HttpConnection.html?line=1031#src-1031">HttpConnection.Response.writePost(Connection.Request,OutputStream,String)&#160;:&#160;void</a>
+                            <span class="aui-badge" title="Method complexity">6</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">2.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="HtmlToPlainText.FormattingVisitor.append(String)&#160;:&#160;void" href="org/jsoup/examples/HtmlToPlainText.html?line=97#src-97">HtmlToPlainText.FormattingVisitor.append(String)&#160;:&#160;void</a>
+                            <span class="aui-badge" title="Method complexity">9</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">3.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="Tag.hashCode()&#160;:&#160;int" href="org/jsoup/parser/Tag.html?line=222#src-222">Tag.hashCode()&#160;:&#160;int</a>
+                            <span class="aui-badge" title="Method complexity">9</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">4.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="TokeniserState.read(Tokeniser,CharacterReader)&#160;:&#160;void" href="org/jsoup/parser/TokeniserState.html?line=508#src-508">TokeniserState.read(Tokeniser,CharacterReader)&#160;:&#160;void</a>
+                            <span class="aui-badge" title="Method complexity">6</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">5.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="HttpConnection.Response.createConnection(Connection.Request)&#160;:&#160;HttpURLConnection" href="org/jsoup/helper/HttpConnection.html?line=891#src-891">HttpConnection.Response.createConnection(Connection.Request)&#160;:&#160;HttpURLConnection</a>
+                            <span class="aui-badge" title="Method complexity">6</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">6.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="TokeniserState.read(Tokeniser,CharacterReader)&#160;:&#160;void" href="org/jsoup/parser/TokeniserState.html?line=964#src-964">TokeniserState.read(Tokeniser,CharacterReader)&#160;:&#160;void</a>
+                            <span class="aui-badge" title="Method complexity">5</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">7.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="HttpConnection.Response.createHeaderMap(HttpURLConnection)&#160;:&#160;LinkedHashMap&lt;String,&#160;List&lt;String&gt;&gt;" href="org/jsoup/helper/HttpConnection.html?line=958#src-958">HttpConnection.Response.createHeaderMap(HttpURLConnection)&#160;:&#160;LinkedHashMap&lt;String,&#160;List&lt;String&gt;&gt;</a>
+                            <span class="aui-badge" title="Method complexity">6</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">8.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="TokeniserState.read(Tokeniser,CharacterReader)&#160;:&#160;void" href="org/jsoup/parser/TokeniserState.html?line=481#src-481">TokeniserState.read(Tokeniser,CharacterReader)&#160;:&#160;void</a>
+                            <span class="aui-badge" title="Method complexity">5</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">9.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="Document.normalise()&#160;:&#160;Document" href="org/jsoup/nodes/Document.html?line=118#src-118">Document.normalise()&#160;:&#160;Document</a>
+                            <span class="aui-badge" title="Method complexity">4</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">10.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="ListLinks.main(String[])&#160;:&#160;void" href="org/jsoup/examples/ListLinks.html?line=15#src-15">ListLinks.main(String[])&#160;:&#160;void</a>
+                            <span class="aui-badge" title="Method complexity">2</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">11.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="HttpConnection.Response.serialiseRequestUrl(Connection.Request)&#160;:&#160;void" href="org/jsoup/helper/HttpConnection.html?line=1098#src-1098">HttpConnection.Response.serialiseRequestUrl(Connection.Request)&#160;:&#160;void</a>
+                            <span class="aui-badge" title="Method complexity">3</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">12.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="Attribute.equals(Object)&#160;:&#160;boolean" href="org/jsoup/nodes/Attribute.html?line=185#src-185">Attribute.equals(Object)&#160;:&#160;boolean</a>
+                            <span class="aui-badge" title="Method complexity">7</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">13.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="Document.normaliseStructure(String,Element)&#160;:&#160;void" href="org/jsoup/nodes/Document.html?line=161#src-161">Document.normaliseStructure(String,Element)&#160;:&#160;void</a>
+                            <span class="aui-badge" title="Method complexity">4</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">14.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="HtmlTreeBuilderState.process(Token,HtmlTreeBuilder)&#160;:&#160;boolean" href="org/jsoup/parser/HtmlTreeBuilderState.html?line=1311#src-1311">HtmlTreeBuilderState.process(Token,HtmlTreeBuilder)&#160;:&#160;boolean</a>
+                            <span class="aui-badge" title="Method complexity">6</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">15.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="HtmlToPlainText.FormattingVisitor.head(Node,int)&#160;:&#160;void" href="org/jsoup/examples/HtmlToPlainText.html?line=75#src-75">HtmlToPlainText.FormattingVisitor.head(Node,int)&#160;:&#160;void</a>
+                            <span class="aui-badge" title="Method complexity">5</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">16.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="Document.normaliseTextNodes(Element)&#160;:&#160;void" href="org/jsoup/nodes/Document.html?line=142#src-142">Document.normaliseTextNodes(Element)&#160;:&#160;void</a>
+                            <span class="aui-badge" title="Method complexity">4</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">17.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="HttpConnection.Response.setupFromConnection(HttpURLConnection,HttpConnection.Response)&#160;:&#160;void" href="org/jsoup/helper/HttpConnection.html?line=937#src-937">HttpConnection.Response.setupFromConnection(HttpURLConnection,HttpConnection.Response)&#160;:&#160;void</a>
+                            <span class="aui-badge" title="Method complexity">3</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">18.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="HttpConnection.Response.setOutputContentType(Connection.Request)&#160;:&#160;String" href="org/jsoup/helper/HttpConnection.html?line=1008#src-1008">HttpConnection.Response.setOutputContentType(Connection.Request)&#160;:&#160;String</a>
+                            <span class="aui-badge" title="Method complexity">5</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">19.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="HtmlToPlainText.main(String)&#160;:&#160;void" href="org/jsoup/examples/HtmlToPlainText.html?line=34#src-34">HtmlToPlainText.main(String)&#160;:&#160;void</a>
+                            <span class="aui-badge" title="Method complexity">3</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">20.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="TokeniserState.read(Tokeniser,CharacterReader)&#160;:&#160;void" href="org/jsoup/parser/TokeniserState.html?line=1591#src-1591">TokeniserState.read(Tokeniser,CharacterReader)&#160;:&#160;void</a>
+                            <span class="aui-badge" title="Method complexity">3</span>
+
+                        </td>
+                    </tr>
+                                    </table>
+            </div>
+        </div>
+        
+    </div>
+</div>
+                            </div> <!-- tabs-pane active-pane -->
+                        </div>
+
+    <script type="text/javascript" src="jit.js" ></script>
+    <script type="text/javascript" src="treemap-dash-json.js" ></script>
+
+                        </div> <!-- class="aui-page-panel-content-clover" -->
+                    <footer id="footer" role="contentinfo">
+    <section class="footer-body">
+        <ul>
+            <li>
+                Report generated by <a target="_new" href="http://openclover.org">OpenClover</a> v 4.2.0
+                on Thu Oct 19 2023 19:08:34 PDT using coverage data from Thu Oct 19 2023 19:08:32 PDT.
+            </li>
+        </ul>
+        <ul>
+            <li>Clover free edition. </li>
+        </ul>
+    </section>
+</footer>                </section> <!-- class="aui-page-panel-content" -->
+            </div> <!-- class="aui-page-panel-inner" -->
+        </div> <!-- class="aui-page-panel" -->
+    </div> <!-- id="page" -->
+</body>
+</html>

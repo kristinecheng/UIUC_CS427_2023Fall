@@ -1,0 +1,2193 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    
+    
+    <link rel="SHORTCUT ICON" href="../../img/clover.ico" />
+
+    <link rel="stylesheet" href="../../aui/css/aui.min.css" media="all"/>
+    <link rel="stylesheet" href="../../aui/css/aui-experimental.min.css" media="all"/>
+    <!--[if IE 9]><link rel="stylesheet" href="../../aui/css/aui-ie9.min.css" media="all"/><![endif]-->
+
+    <style type="text/css" media="all">
+        @import url('../../style.css');
+        @import url('../../tree.css');
+        
+    </style>
+
+    <script src="../../jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="../../aui/js/aui.min.js" type="text/javascript"></script>
+    <script src="../../aui/js/aui-experimental.min.js" type="text/javascript"></script>
+    <script src="../../aui/js/aui-soy.min.js" type="text/javascript"></script>
+
+    <script src="../../package-nodes-tree.js" type="text/javascript"></script>
+    <script src="../../clover-tree.js" type="text/javascript"></script>
+    <script src="../../clover.js" type="text/javascript"></script>
+    <script src="../../clover-descriptions.js" type="text/javascript"></script>
+    <script src="../../cloud.js" type="text/javascript"></script>
+
+            <title>jsoup Java HTML Parser 1.12.2-SNAPSHOT</title>
+    </head>
+
+<body  onload="onLoad('jsoup Java HTML Parser 1.12.2-SNAPSHOT: org.jsoup.TextUtil.java')">
+    <div id="page">
+        
+        
+
+
+<header id="header" role="banner">
+    <nav class="aui-header aui-dropdown2-trigger-group" role="navigation">
+        <div class="aui-header-inner">
+            <div class="aui-header-primary">
+                <h1 id="logo" class="aui-header-logo aui-header-logo-clover">
+                    <a href="http://openclover.org" title="Visit OpenClover home page"><span class="aui-header-logo-device">OpenClover</span></a>
+                </h1>
+                            </div>
+            <div class="aui-header-secondary">
+                <ul class="aui-nav">
+                    <li id="system-help-menu">
+                        <a class="aui-nav-link" title="Open online documentation" target="_blank"
+                           href="http://openclover.org/documentation">
+                            <span class="aui-icon aui-icon-small aui-iconfont-help">&#160;Help</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+        
+        <div class="aui-page-panel">
+            <div class="aui-page-panel-inner">
+                <div class="aui-page-panel-nav aui-page-panel-nav-clover">
+                    
+
+<div class="aui-page-header-inner" style="margin-bottom: 20px;">
+    <div class="aui-page-header-image">
+                <div class="aui-avatar aui-avatar-large aui-avatar-project">
+            <div class="aui-avatar-inner">
+                                    <img src="../../img/clover_logo_large.png" alt="Clover icon"/>
+                            </div>
+        </div>
+            </div>
+    <div class="aui-page-header-main" >
+        <h1>
+                                        jsoup Java HTML Parser 1.12.2-SNAPSHOT
+                                </h1>
+    </div>
+</div>
+
+<nav class="aui-navgroup aui-navgroup-vertical">
+    <div class="aui-navgroup-inner">
+                                            <ul class="aui-nav">
+                <li class="">
+                    <a href="../../dashboard.html">Project overview</a>
+                </li>
+            </ul>
+        
+                <div class="aui-nav-heading packages-nav-heading">
+            <strong>Packages</strong>
+        </div>
+        <div class="aui-nav project-packages">
+            <form method="get" action="#" class="aui package-filter-container">
+                <input type="text" autocomplete="off" class="package-filter text"
+                       placeholder="Type to filter packages..." name="package-filter" id="package-filter"
+                       title="Start typing package name (or part of the name) to search through the tree. Use arrow keys and the Enter key to navigate."/>
+            </form>
+            <p class="package-filter-no-results-message hidden">
+                <small>No results found.</small>
+            </p>
+                                                <div class="packages-tree-wrapper" data-root-relative="../../" data-package-name="org.jsoup">
+                <div class="packages-tree-container"></div>
+                <div class="clover-packages-lozenges"></div>
+            </div>
+        </div>
+        
+            </div>
+</nav>                </div>
+                <section class="aui-page-panel-content">
+                    <div class="aui-page-panel-content-clover">
+
+                    
+                    <ol class="aui-nav aui-nav-breadcrumbs">
+            
+        <li><a href="../../dashboard.html">Project Clover database Thu Oct 19 2023 19:08:27 PDT</a></li> 
+        <li><a href="pkg-summary.html">        Package org.jsoup</a></li> 
+    </ol>
+    
+<h1 class="aui-h2-clover">
+            File TextUtil.java
+    </h1>
+
+
+
+
+
+
+
+
+    
+<div class="aui-tabs horizontal-tabs" id="tabs-file">
+            <div class="tabs-pane aui-tabs-pane-100-pcnt active-pane" id="tabs-file-source">
+        <div>&#160;</div>
+
+        
+                <div style="display: table; width: 100%">
+                            <div class="clover-histogram-table-cell">
+                                <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>Coverage histogram</h3>
+            </header>
+            <div class="dashboard-widget-content">
+                <div class="aui-item clover-aui-item-histogram">
+                    <img src="../../img/srcFileCovDistChart10.png" alt="../../img/srcFileCovDistChart10.png"
+                         usemap="#srcFileCovDistChart10.png" class="clover-histogram-img"/>
+                    <map id="srcFileCovDistChart10.png" name="srcFileCovDistChart10.png">
+<area shape="rect" coords="100,8,107,65" title="23 files have 91-100% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="91,26,98,66" title="16 files have 81-90% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="82,51,89,66" title="6 files have 71-80% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="73,56,80,66" title="4 files have 61-70% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="64,61,71,66" title="2 files have 51-60% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="56,59,63,66" title="3 files have 41-50% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="47,64,54,66" title="1 file has 31-40% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="38,66,45,67" title="0 files have 21-30% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="29,66,36,67" title="0 files have 11-20% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="20,66,27,67" title="0 files have 1-10% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="11,24,18,66" title="17 files have 0% coverage" alt="" nohref="nohref"/>
+</map><br />
+                    <span class="subtle"><strong>0% </strong>of files have more coverage</span>
+                </div>
+            </div>
+        </div>
+                    </div>
+                        <div style="display: table-cell; width: 67%;">
+                    <div class="dashboard-widget">
+        <header class="dashboard-widget-header">
+            <h3>Code metrics</h3>
+        </header>
+        <div class="dashboard-widget-content">
+                        
+
+<div id="td-header-stats" class="aui-item" style="display: ">
+<div style="display: table">
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of branches in this file">Branches:</label></div>
+        <div class="stats-box-value">0</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of statements in this file">Statements:</label></div>
+        <div class="stats-box-value">1</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of methods in this file">Methods:</label></div>
+        <div class="stats-box-value">1</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of classes in this file">Classes:</label></div>
+        <div class="stats-box-value">1</div>
+    </div>
+            <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of lines of code in this file">LOC:</label></div>
+        <div class="stats-box-value">15</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of non-comment lines of code in this file">NCLOC:</label></div>
+        <div class="stats-box-value">8</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Cyclomatic complexity is the number of paths in this file">Total complexity:</label></div>
+        <div class="stats-box-value">1</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label">
+            <label title="Complexity density is the complexity divided by the number of statements in this file">Complexity density:</label>
+        </div>
+        <div class="stats-box-value">1</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of statements per method.">Statements/Method:</label></div>
+        <div class="stats-box-value">1</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of methods per class.">Methods/Class:</label></div>
+        <div class="stats-box-value">1</div>
+    </div>
+        <div class="stats-box">
+        <div class="stats-box-label"><label title="Complexity divided by the number of methods in this file">Average method complexity:</label></div>
+        <div class="stats-box-value">1</div>
+    </div>
+</div>
+
+</div>
+                        
+
+<div id="td-filtered-header-stats" class="aui-item" style="display: none">
+<div style="display: table">
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of branches in this file">Branches:</label></div>
+        <div class="stats-box-value">0</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of statements in this file">Statements:</label></div>
+        <div class="stats-box-value">1</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of methods in this file">Methods:</label></div>
+        <div class="stats-box-value">1</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of classes in this file">Classes:</label></div>
+        <div class="stats-box-value">1</div>
+    </div>
+            <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of lines of code in this file">LOC:</label></div>
+        <div class="stats-box-value">15</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of non-comment lines of code in this file">NCLOC:</label></div>
+        <div class="stats-box-value">8</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Cyclomatic complexity is the number of paths in this file">Total complexity:</label></div>
+        <div class="stats-box-value">1</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label">
+            <label title="Complexity density is the complexity divided by the number of statements in this file">Complexity density:</label>
+        </div>
+        <div class="stats-box-value">1</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of statements per method.">Statements/Method:</label></div>
+        <div class="stats-box-value">1</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of methods per class.">Methods/Class:</label></div>
+        <div class="stats-box-value">1</div>
+    </div>
+        <div class="stats-box">
+        <div class="stats-box-label"><label title="Complexity divided by the number of methods in this file">Average method complexity:</label></div>
+        <div class="stats-box-value">1</div>
+    </div>
+</div>
+
+</div>        </div>
+    </div>
+            </div>
+        </div>
+
+        
+        
+
+
+    <h2>Classes</h2>
+
+        <table class="aui aui-table-sortable">
+        <thead>
+                        <tr>     <th>Class</th>
+    <th>Line #</th>
+
+            
+        <th class="">
+            <label  title="The total number of statements.">Total Statements</label>
+        </th>
+        
+            
+        <th class="">
+            <label  title="The percentage of elements that have been filtered from this report.">% Filtered</label>
+        </th>
+        
+            
+        <th class="">
+            <label  title="Cyclomatic complexity is a measure of the number of paths in your code.">Complexity</label>
+        </th>
+        
+            
+        <th class="">
+            <label  title="The number of statements and branches that were not covered during testing.">Uncovered Elements</label>
+        </th>
+        
+            
+        <th class="">
+            <label  title="The amount of code that was hit at least once during testing.">TOTAL Coverage</label>
+        </th>
+        
+    
+            <th>Actions</th>
+    </tr>         </thead>
+        <tbody>
+                              <tr> <td id="TextUtil">
+        <span><a href="#9" title="TextUtil" onclick="closeDialogAndScrollTo('dialog-TextUtil', '9');">TextUtil</a></span>
+</td>
+<td>9<a name="sl-9"></a></td>
+    <td class="">1</td>
+    <td class="">0%</td>
+    <td class="">1</td>
+    <td class="">0</td>
+    <td class=""><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+    <td><button data-dialog-id="dialog-TextUtil" class="aui-button aui-button-link dialog-show-button">Show methods</button></td>
+</tr>                      </tbody>
+    </table>
+
+    
+     
+        <section role="dialog" id="dialog-TextUtil" class="aui-layer aui-dialog2 aui-dialog2-xlarge" aria-hidden="true">
+            
+            <header class="aui-dialog2-header">
+                <h1 class="aui-dialog2-header-main">Class TextUtil</h1>
+                <div class="aui-dialog2-header-secondary">
+                    <input id="dialog-TextUtil-method-filter" class="test-filter text" type="text" name="method-filter"
+                           placeholder="Type to filter methods..." autocomplete="off"
+                           onkeyup="filterMethods('dialog-TextUtil-methods-body', 'dialog-TextUtil-method-filter');"/>
+                </div>
+            </header>
+
+            
+            <div class="aui-dialog2-content">
+
+                
+
+                <table class="aui aui-table-sortable">
+                                                                                                            
+                    <thead>
+                                                 <tr> <th id="TextUtil">
+    Class<br/>    <span><a href="#9" title="TextUtil" onclick="closeDialogAndScrollTo('dialog-TextUtil', '9');">TextUtil</a></span>
+</th>
+<th>Line #<br/>9<a name="sl-9"></a></th>
+    <th class=""><label  title="The total number of statements.">Total Statements</label><br/>1</th>
+    <th class=""><label  title="The percentage of elements that have been filtered from this report.">% Filtered</label><br/>0%</th>
+    <th class=""><label  title="Cyclomatic complexity is a measure of the number of paths in your code.">Complexity</label><br/>1</th>
+    <th class=""><label  title="The number of statements and branches that were not covered during testing.">Uncovered Elements</label><br/>0</th>
+    <th class=""><label  title="The amount of code that was hit at least once during testing.">TOTAL Coverage</label><br/><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></th>
+</tr>                     </thead>
+                    <tbody id="dialog-TextUtil-methods-body">
+                                                                                                            <tr id="TextUtil-1">
+<td id="summary-12-5">
+ <span class="sortValue">stripNewlines(String)&#160;:&#160;String</span>
+&#160;&#160;<a href="?line=29#12" title="stripNewlines(String)&#160;:&#160;String" name="sl-12" onclick="closeDialogAndScrollTo('dialog-TextUtil', '12');">stripNewlines(String)&#160;:&#160;String</a>
+</td>
+<td align="right"><span class="sortValue">12</span>12</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">1.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+ </tr>                                                                         </tbody>
+                </table>
+
+                <div>&#160;</div>
+                
+
+            </div>
+
+            
+            <footer class="aui-dialog2-footer">
+                <div class="aui-dialog2-footer-actions">
+                    <button class="aui-button aui-button-primary dialog-close-button"
+                            data-dialog-id="dialog-TextUtil">Close</button>
+                </div>
+                <div class="aui-dialog2-footer-hint">Click on a class or a method name to jump to source.</div>
+            </footer>
+        </section>
+
+     
+ 
+        
+        <div>&#160;</div>
+
+<h2>Contributing tests</h2>
+
+    <div>
+                This file is covered by 96 tests.
+        <button data-dialog-id="contr-tests-dialog" class="aui-button aui-button-link dialog-show-button">
+            Select tests to highlight the test coverage
+        </button>.
+    </div>
+
+<section role="dialog" id="contr-tests-dialog" class="aui-layer aui-dialog2 aui-dialog2-xlarge" aria-hidden="true">
+    
+    <header class="aui-dialog2-header">
+        <h1 class="aui-dialog2-header-main">Contributing tests</h1>
+        <div class="aui-dialog2-header-secondary">
+            <input id="test-filter" class="test-filter text" type="text" name="test-filter"
+                   placeholder="Type to filter tests..." autocomplete="off"
+                   onkeyup="filterTests('tests-body', 'test-filter', 3);"/>
+        </div>
+    </header>
+
+    
+    <div class="aui-dialog2-content">
+    
+
+        <p class="aui-buttons">
+            <button title="Selects all tests for this file, highlighting their coverage."
+                    class="aui-button" id="selectalltests">Select all</button>
+        </p>
+
+        <table class="aui aui-table-sortable">
+            <thead id="tests-head">
+            <tr id="testHeaderRow">
+                <th class="aui-table-column-unsortable"></th>
+                <th>
+                    <label title="The percentage of coverage contributed by each single test.">Test contribution</label>
+                </th>
+                <th>
+                    <label title="The test (or test iteration) which was executed.">Test</label>
+                </th>
+                <th>
+                    <label>Result</label>
+                </th>
+                <th class="aui-table-column-unsortable">
+                    <label>Actions</label>
+                </th>
+            </tr>
+            </thead>
+            <tbody id="tests-body">
+
+<tr id="test-334">
+<td><a name="testA-334"></a><input type="checkbox" id="cb-334" value="334" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../org/jsoup/parser/HtmlParserTest_handlesTextAfterData_9a.html';">
+<span class="sortValue">1.0</span>
+<div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:100%"></div></div></div></td>
+<td id="tc-334">  <span class="sortValue">org.jsoup.parser.HtmlParserTest.handlesTextAfterData</span><a href="../../org/jsoup/parser/HtmlParserTest_handlesTextAfterData_9a.html" title="View Test Summary Page">org.jsoup.parser.HtmlParserTest.handlesTextAfterData</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../org/jsoup/parser/HtmlParserTest.html?line=209#src-209" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../org/jsoup/parser/HtmlParserTest_handlesTextAfterData_9a.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-304">
+<td><a name="testA-304"></a><input type="checkbox" id="cb-304" value="304" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../org/jsoup/parser/HtmlParserTest_ignoresContentAfterFrameset_8g.html';">
+<span class="sortValue">1.0</span>
+<div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:100%"></div></div></div></td>
+<td id="tc-304">  <span class="sortValue">org.jsoup.parser.HtmlParserTest.ignoresContentAfterFrameset</span><a href="../../org/jsoup/parser/HtmlParserTest_ignoresContentAfterFrameset_8g.html" title="View Test Summary Page">org.jsoup.parser.HtmlParserTest.ignoresContentAfterFrameset</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../org/jsoup/parser/HtmlParserTest.html?line=526#src-526" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../org/jsoup/parser/HtmlParserTest_ignoresContentAfterFrameset_8g.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-585">
+<td><a name="testA-585"></a><input type="checkbox" id="cb-585" value="585" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../org/jsoup/parser/HtmlParserTest_handlesKnownEmptyTitle_g9.html';">
+<span class="sortValue">1.0</span>
+<div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:100%"></div></div></div></td>
+<td id="tc-585">  <span class="sortValue">org.jsoup.parser.HtmlParserTest.handlesKnownEmptyTitle</span><a href="../../org/jsoup/parser/HtmlParserTest_handlesKnownEmptyTitle_g9.html" title="View Test Summary Page">org.jsoup.parser.HtmlParserTest.handlesKnownEmptyTitle</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../org/jsoup/parser/HtmlParserTest.html?line=472#src-472" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../org/jsoup/parser/HtmlParserTest_handlesKnownEmptyTitle_g9.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-42">
+<td><a name="testA-42"></a><input type="checkbox" id="cb-42" value="42" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../org/jsoup/parser/HtmlParserTest_associatedFormControlsWithDisjointForms_16.html';">
+<span class="sortValue">1.0</span>
+<div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:100%"></div></div></div></td>
+<td id="tc-42">  <span class="sortValue">org.jsoup.parser.HtmlParserTest.associatedFormControlsWithDisjointForms</span><a href="../../org/jsoup/parser/HtmlParserTest_associatedFormControlsWithDisjointForms_16.html" title="View Test Summary Page">org.jsoup.parser.HtmlParserTest.associatedFormControlsWithDisjointForms</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../org/jsoup/parser/HtmlParserTest.html?line=928#src-928" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../org/jsoup/parser/HtmlParserTest_associatedFormControlsWithDisjointForms_16.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-513">
+<td><a name="testA-513"></a><input type="checkbox" id="cb-513" value="513" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../org/jsoup/nodes/NodeTest_childNodesCopy_e9.html';">
+<span class="sortValue">1.0</span>
+<div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:100%"></div></div></div></td>
+<td id="tc-513">  <span class="sortValue">org.jsoup.nodes.NodeTest.childNodesCopy</span><a href="../../org/jsoup/nodes/NodeTest_childNodesCopy_e9.html" title="View Test Summary Page">org.jsoup.nodes.NodeTest.childNodesCopy</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../org/jsoup/nodes/NodeTest.html?line=263#src-263" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../org/jsoup/nodes/NodeTest_childNodesCopy_e9.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-730">
+<td><a name="testA-730"></a><input type="checkbox" id="cb-730" value="730" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../org/jsoup/parser/XmlTreeBuilderTest_testCommentAndDocType_ka.html';">
+<span class="sortValue">1.0</span>
+<div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:100%"></div></div></div></td>
+<td id="tc-730">  <span class="sortValue">org.jsoup.parser.XmlTreeBuilderTest.testCommentAndDocType</span><a href="../../org/jsoup/parser/XmlTreeBuilderTest_testCommentAndDocType_ka.html" title="View Test Summary Page">org.jsoup.parser.XmlTreeBuilderTest.testCommentAndDocType</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../org/jsoup/parser/XmlTreeBuilderTest.html?line=54#src-54" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../org/jsoup/parser/XmlTreeBuilderTest_testCommentAndDocType_ka.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-71">
+<td><a name="testA-71"></a><input type="checkbox" id="cb-71" value="71" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../org/jsoup/parser/HtmlParserTest_canPreserveAttributeCase_1z.html';">
+<span class="sortValue">1.0</span>
+<div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:100%"></div></div></div></td>
+<td id="tc-71">  <span class="sortValue">org.jsoup.parser.HtmlParserTest.canPreserveAttributeCase</span><a href="../../org/jsoup/parser/HtmlParserTest_canPreserveAttributeCase_1z.html" title="View Test Summary Page">org.jsoup.parser.HtmlParserTest.canPreserveAttributeCase</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../org/jsoup/parser/HtmlParserTest.html?line=1110#src-1110" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../org/jsoup/parser/HtmlParserTest_canPreserveAttributeCase_1z.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-393">
+<td><a name="testA-393"></a><input type="checkbox" id="cb-393" value="393" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../org/jsoup/parser/HtmlParserTest_testHeaderContents_ax.html';">
+<span class="sortValue">1.0</span>
+<div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:100%"></div></div></div></td>
+<td id="tc-393">  <span class="sortValue">org.jsoup.parser.HtmlParserTest.testHeaderContents</span><a href="../../org/jsoup/parser/HtmlParserTest_testHeaderContents_ax.html" title="View Test Summary Page">org.jsoup.parser.HtmlParserTest.testHeaderContents</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../org/jsoup/parser/HtmlParserTest.html?line=592#src-592" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../org/jsoup/parser/HtmlParserTest_testHeaderContents_ax.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-846">
+<td><a name="testA-846"></a><input type="checkbox" id="cb-846" value="846" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../org/jsoup/parser/XmlTreeBuilderTest_testSupplyParserToDataStream_ni.html';">
+<span class="sortValue">1.0</span>
+<div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:100%"></div></div></div></td>
+<td id="tc-846">  <span class="sortValue">org.jsoup.parser.XmlTreeBuilderTest.testSupplyParserToDataStream</span><a href="../../org/jsoup/parser/XmlTreeBuilderTest_testSupplyParserToDataStream_ni.html" title="View Test Summary Page">org.jsoup.parser.XmlTreeBuilderTest.testSupplyParserToDataStream</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../org/jsoup/parser/XmlTreeBuilderTest.html?line=91#src-91" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../org/jsoup/parser/XmlTreeBuilderTest_testSupplyParserToDataStream_ni.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-154">
+<td><a name="testA-154"></a><input type="checkbox" id="cb-154" value="154" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../org/jsoup/parser/HtmlParserTest_normalisesDocument_4a.html';">
+<span class="sortValue">1.0</span>
+<div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:100%"></div></div></div></td>
+<td id="tc-154">  <span class="sortValue">org.jsoup.parser.HtmlParserTest.normalisesDocument</span><a href="../../org/jsoup/parser/HtmlParserTest_normalisesDocument_4a.html" title="View Test Summary Page">org.jsoup.parser.HtmlParserTest.normalisesDocument</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../org/jsoup/parser/HtmlParserTest.html?line=550#src-550" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../org/jsoup/parser/HtmlParserTest_normalisesDocument_4a.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-147">
+<td><a name="testA-147"></a><input type="checkbox" id="cb-147" value="147" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../org/jsoup/nodes/ElementTest_testPrependText_43.html';">
+<span class="sortValue">1.0</span>
+<div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:100%"></div></div></div></td>
+<td id="tc-147">  <span class="sortValue">org.jsoup.nodes.ElementTest.testPrependText</span><a href="../../org/jsoup/nodes/ElementTest_testPrependText_43.html" title="View Test Summary Page">org.jsoup.nodes.ElementTest.testPrependText</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../org/jsoup/nodes/ElementTest.html?line=453#src-453" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../org/jsoup/nodes/ElementTest_testPrependText_43.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-696">
+<td><a name="testA-696"></a><input type="checkbox" id="cb-696" value="696" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../org/jsoup/nodes/NodeTest_testRemove_jc.html';">
+<span class="sortValue">1.0</span>
+<div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:100%"></div></div></div></td>
+<td id="tc-696">  <span class="sortValue">org.jsoup.nodes.NodeTest.testRemove</span><a href="../../org/jsoup/nodes/NodeTest_testRemove_jc.html" title="View Test Summary Page">org.jsoup.nodes.NodeTest.testRemove</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../org/jsoup/nodes/NodeTest.html?line=134#src-134" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../org/jsoup/nodes/NodeTest_testRemove_jc.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-581">
+<td><a name="testA-581"></a><input type="checkbox" id="cb-581" value="581" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../org/jsoup/parser/HtmlParserTest_testSpaceAfterTag_g5.html';">
+<span class="sortValue">1.0</span>
+<div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:100%"></div></div></div></td>
+<td id="tc-581">  <span class="sortValue">org.jsoup.parser.HtmlParserTest.testSpaceAfterTag</span><a href="../../org/jsoup/parser/HtmlParserTest_testSpaceAfterTag_g5.html" title="View Test Summary Page">org.jsoup.parser.HtmlParserTest.testSpaceAfterTag</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../org/jsoup/parser/HtmlParserTest.html?line=157#src-157" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../org/jsoup/parser/HtmlParserTest_testSpaceAfterTag_g5.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-276">
+<td><a name="testA-276"></a><input type="checkbox" id="cb-276" value="276" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../org/jsoup/nodes/NodeTest_unwrap_7o.html';">
+<span class="sortValue">1.0</span>
+<div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:100%"></div></div></div></td>
+<td id="tc-276">  <span class="sortValue">org.jsoup.nodes.NodeTest.unwrap</span><a href="../../org/jsoup/nodes/NodeTest_unwrap_7o.html" title="View Test Summary Page">org.jsoup.nodes.NodeTest.unwrap</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../org/jsoup/nodes/NodeTest.html?line=199#src-199" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../org/jsoup/nodes/NodeTest_unwrap_7o.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-636">
+<td><a name="testA-636"></a><input type="checkbox" id="cb-636" value="636" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../org/jsoup/nodes/DocumentTest_testNormalisesStructure_ho.html';">
+<span class="sortValue">1.0</span>
+<div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:100%"></div></div></div></td>
+<td id="tc-636">  <span class="sortValue">org.jsoup.nodes.DocumentTest.testNormalisesStructure</span><a href="../../org/jsoup/nodes/DocumentTest_testNormalisesStructure_ho.html" title="View Test Summary Page">org.jsoup.nodes.DocumentTest.testNormalisesStructure</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../org/jsoup/nodes/DocumentTest.html?line=81#src-81" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../org/jsoup/nodes/DocumentTest_testNormalisesStructure_ho.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-803">
+<td><a name="testA-803"></a><input type="checkbox" id="cb-803" value="803" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../org/jsoup/parser/XmlTreeBuilderTest_testPopToClose_mb.html';">
+<span class="sortValue">1.0</span>
+<div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:100%"></div></div></div></td>
+<td id="tc-803">  <span class="sortValue">org.jsoup.parser.XmlTreeBuilderTest.testPopToClose</span><a href="../../org/jsoup/parser/XmlTreeBuilderTest_testPopToClose_mb.html" title="View Test Summary Page">org.jsoup.parser.XmlTreeBuilderTest.testPopToClose</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../org/jsoup/parser/XmlTreeBuilderTest.html?line=44#src-44" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../org/jsoup/parser/XmlTreeBuilderTest_testPopToClose_mb.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-301">
+<td><a name="testA-301"></a><input type="checkbox" id="cb-301" value="301" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../org/jsoup/safety/CleanerTest_basicBehaviourTest_8d.html';">
+<span class="sortValue">1.0</span>
+<div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:100%"></div></div></div></td>
+<td id="tc-301">  <span class="sortValue">org.jsoup.safety.CleanerTest.basicBehaviourTest</span><a href="../../org/jsoup/safety/CleanerTest_basicBehaviourTest_8d.html" title="View Test Summary Page">org.jsoup.safety.CleanerTest.basicBehaviourTest</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../org/jsoup/safety/CleanerTest.html?line=35#src-35" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../org/jsoup/safety/CleanerTest_basicBehaviourTest_8d.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-60">
+<td><a name="testA-60"></a><input type="checkbox" id="cb-60" value="60" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../org/jsoup/select/ElementsTest_wrapDiv_1o.html';">
+<span class="sortValue">1.0</span>
+<div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:100%"></div></div></div></td>
+<td id="tc-60">  <span class="sortValue">org.jsoup.select.ElementsTest.wrapDiv</span><a href="../../org/jsoup/select/ElementsTest_wrapDiv_1o.html" title="View Test Summary Page">org.jsoup.select.ElementsTest.wrapDiv</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../org/jsoup/select/ElementsTest.html?line=182#src-182" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../org/jsoup/select/ElementsTest_wrapDiv_1o.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-549">
+<td><a name="testA-549"></a><input type="checkbox" id="cb-549" value="549" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../org/jsoup/parser/HtmlParserTest_canPreserveBothCase_f9.html';">
+<span class="sortValue">1.0</span>
+<div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:100%"></div></div></div></td>
+<td id="tc-549">  <span class="sortValue">org.jsoup.parser.HtmlParserTest.canPreserveBothCase</span><a href="../../org/jsoup/parser/HtmlParserTest_canPreserveBothCase_f9.html" title="View Test Summary Page">org.jsoup.parser.HtmlParserTest.canPreserveBothCase</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../org/jsoup/parser/HtmlParserTest.html?line=1121#src-1121" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../org/jsoup/parser/HtmlParserTest_canPreserveBothCase_f9.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-136">
+<td><a name="testA-136"></a><input type="checkbox" id="cb-136" value="136" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../org/jsoup/nodes/DocumentTest_testClone_3s.html';">
+<span class="sortValue">1.0</span>
+<div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:100%"></div></div></div></td>
+<td id="tc-136">  <span class="sortValue">org.jsoup.nodes.DocumentTest.testClone</span><a href="../../org/jsoup/nodes/DocumentTest_testClone_3s.html" title="View Test Summary Page">org.jsoup.nodes.DocumentTest.testClone</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../org/jsoup/nodes/DocumentTest.html?line=86#src-86" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../org/jsoup/nodes/DocumentTest_testClone_3s.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-712">
+<td><a name="testA-712"></a><input type="checkbox" id="cb-712" value="712" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../org/jsoup/nodes/ElementTest_before_js.html';">
+<span class="sortValue">1.0</span>
+<div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:100%"></div></div></div></td>
+<td id="tc-712">  <span class="sortValue">org.jsoup.nodes.ElementTest.before</span><a href="../../org/jsoup/nodes/ElementTest_before_js.html" title="View Test Summary Page">org.jsoup.nodes.ElementTest.before</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../org/jsoup/nodes/ElementTest.html?line=533#src-533" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../org/jsoup/nodes/ElementTest_before_js.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-812">
+<td><a name="testA-812"></a><input type="checkbox" id="cb-812" value="812" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../org/jsoup/parser/XmlTreeBuilderTest_testSupplyParserToJsoupClass_mk.html';">
+<span class="sortValue">1.0</span>
+<div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:100%"></div></div></div></td>
+<td id="tc-812">  <span class="sortValue">org.jsoup.parser.XmlTreeBuilderTest.testSupplyParserToJsoupClass</span><a href="../../org/jsoup/parser/XmlTreeBuilderTest_testSupplyParserToJsoupClass_mk.html" title="View Test Summary Page">org.jsoup.parser.XmlTreeBuilderTest.testSupplyParserToJsoupClass</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../org/jsoup/parser/XmlTreeBuilderTest.html?line=63#src-63" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../org/jsoup/parser/XmlTreeBuilderTest_testSupplyParserToJsoupClass_mk.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-109">
+<td><a name="testA-109"></a><input type="checkbox" id="cb-109" value="109" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../org/jsoup/parser/HtmlParserTest_normalisedBodyAfterContent_31.html';">
+<span class="sortValue">1.0</span>
+<div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:100%"></div></div></div></td>
+<td id="tc-109">  <span class="sortValue">org.jsoup.parser.HtmlParserTest.normalisedBodyAfterContent</span><a href="../../org/jsoup/parser/HtmlParserTest_normalisedBodyAfterContent_31.html" title="View Test Summary Page">org.jsoup.parser.HtmlParserTest.normalisedBodyAfterContent</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../org/jsoup/parser/HtmlParserTest.html?line=568#src-568" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../org/jsoup/parser/HtmlParserTest_normalisedBodyAfterContent_31.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-875">
+<td><a name="testA-875"></a><input type="checkbox" id="cb-875" value="875" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../org/jsoup/parser/HtmlParserTest_handlesKnownEmptyBlocks_ob.html';">
+<span class="sortValue">1.0</span>
+<div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:100%"></div></div></div></td>
+<td id="tc-875">  <span class="sortValue">org.jsoup.parser.HtmlParserTest.handlesKnownEmptyBlocks</span><a href="../../org/jsoup/parser/HtmlParserTest_handlesKnownEmptyBlocks_ob.html" title="View Test Summary Page">org.jsoup.parser.HtmlParserTest.handlesKnownEmptyBlocks</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../org/jsoup/parser/HtmlParserTest.html?line=453#src-453" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../org/jsoup/parser/HtmlParserTest_handlesKnownEmptyBlocks_ob.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-337">
+<td><a name="testA-337"></a><input type="checkbox" id="cb-337" value="337" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../org/jsoup/nodes/ElementTest_testAddNewText_9d.html';">
+<span class="sortValue">1.0</span>
+<div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:100%"></div></div></div></td>
+<td id="tc-337">  <span class="sortValue">org.jsoup.nodes.ElementTest.testAddNewText</span><a href="../../org/jsoup/nodes/ElementTest_testAddNewText_9d.html" title="View Test Summary Page">org.jsoup.nodes.ElementTest.testAddNewText</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../org/jsoup/nodes/ElementTest.html?line=446#src-446" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../org/jsoup/nodes/ElementTest_testAddNewText_9d.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-752">
+<td><a name="testA-752"></a><input type="checkbox" id="cb-752" value="752" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../org/jsoup/safety/CleanerTest_testRemoveAttributes_kw.html';">
+<span class="sortValue">1.0</span>
+<div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:100%"></div></div></div></td>
+<td id="tc-752">  <span class="sortValue">org.jsoup.safety.CleanerTest.testRemoveAttributes</span><a href="../../org/jsoup/safety/CleanerTest_testRemoveAttributes_kw.html" title="View Test Summary Page">org.jsoup.safety.CleanerTest.testRemoveAttributes</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../org/jsoup/safety/CleanerTest.html?line=62#src-62" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../org/jsoup/safety/CleanerTest_testRemoveAttributes_kw.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-242">
+<td><a name="testA-242"></a><input type="checkbox" id="cb-242" value="242" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../org/jsoup/nodes/ElementTest_testClone_6q.html';">
+<span class="sortValue">1.0</span>
+<div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:100%"></div></div></div></td>
+<td id="tc-242">  <span class="sortValue">org.jsoup.nodes.ElementTest.testClone</span><a href="../../org/jsoup/nodes/ElementTest_testClone_6q.html" title="View Test Summary Page">org.jsoup.nodes.ElementTest.testClone</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../org/jsoup/nodes/ElementTest.html?line=613#src-613" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../org/jsoup/nodes/ElementTest_testClone_6q.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-13">
+<td><a name="testA-13"></a><input type="checkbox" id="cb-13" value="13" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../org/jsoup/parser/XmlTreeBuilderTest_testSimpleXmlParse_d.html';">
+<span class="sortValue">1.0</span>
+<div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:100%"></div></div></div></td>
+<td id="tc-13">  <span class="sortValue">org.jsoup.parser.XmlTreeBuilderTest.testSimpleXmlParse</span><a href="../../org/jsoup/parser/XmlTreeBuilderTest_testSimpleXmlParse_d.html" title="View Test Summary Page">org.jsoup.parser.XmlTreeBuilderTest.testSimpleXmlParse</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../org/jsoup/parser/XmlTreeBuilderTest.html?line=34#src-34" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../org/jsoup/parser/XmlTreeBuilderTest_testSimpleXmlParse_d.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-48">
+<td><a name="testA-48"></a><input type="checkbox" id="cb-48" value="48" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../org/jsoup/parser/XmlTreeBuilderTest_preservesCaseByDefault_1c.html';">
+<span class="sortValue">1.0</span>
+<div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:100%"></div></div></div></td>
+<td id="tc-48">  <span class="sortValue">org.jsoup.parser.XmlTreeBuilderTest.preservesCaseByDefault</span><a href="../../org/jsoup/parser/XmlTreeBuilderTest_preservesCaseByDefault_1c.html" title="View Test Summary Page">org.jsoup.parser.XmlTreeBuilderTest.preservesCaseByDefault</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../org/jsoup/parser/XmlTreeBuilderTest.html?line=182#src-182" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../org/jsoup/parser/XmlTreeBuilderTest_preservesCaseByDefault_1c.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-599">
+<td><a name="testA-599"></a><input type="checkbox" id="cb-599" value="599" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../org/jsoup/parser/HtmlParserTest_canPreserveTagCase_gn.html';">
+<span class="sortValue">1.0</span>
+<div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:100%"></div></div></div></td>
+<td id="tc-599">  <span class="sortValue">org.jsoup.parser.HtmlParserTest.canPreserveTagCase</span><a href="../../org/jsoup/parser/HtmlParserTest_canPreserveTagCase_gn.html" title="View Test Summary Page">org.jsoup.parser.HtmlParserTest.canPreserveTagCase</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../org/jsoup/parser/HtmlParserTest.html?line=1099#src-1099" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../org/jsoup/parser/HtmlParserTest_canPreserveTagCase_gn.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-878">
+<td><a name="testA-878"></a><input type="checkbox" id="cb-878" value="878" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../org/jsoup/nodes/ElementTest_testPrependNewHtml_oe.html';">
+<span class="sortValue">1.0</span>
+<div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:100%"></div></div></div></td>
+<td id="tc-878">  <span class="sortValue">org.jsoup.nodes.ElementTest.testPrependNewHtml</span><a href="../../org/jsoup/nodes/ElementTest_testPrependNewHtml_oe.html" title="View Test Summary Page">org.jsoup.nodes.ElementTest.testPrependNewHtml</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../org/jsoup/nodes/ElementTest.html?line=486#src-486" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../org/jsoup/nodes/ElementTest_testPrependNewHtml_oe.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-859">
+<td><a name="testA-859"></a><input type="checkbox" id="cb-859" value="859" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../org/jsoup/parser/HtmlParserTest_handlesTbodyTable_nv.html';">
+<span class="sortValue">1.0</span>
+<div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:100%"></div></div></div></td>
+<td id="tc-859">  <span class="sortValue">org.jsoup.parser.HtmlParserTest.handlesTbodyTable</span><a href="../../org/jsoup/parser/HtmlParserTest_handlesTbodyTable_nv.html" title="View Test Summary Page">org.jsoup.parser.HtmlParserTest.handlesTbodyTable</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../org/jsoup/parser/HtmlParserTest.html?line=283#src-283" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../org/jsoup/parser/HtmlParserTest_handlesTbodyTable_nv.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-526">
+<td><a name="testA-526"></a><input type="checkbox" id="cb-526" value="526" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../org/jsoup/nodes/TextNodeTest_testTextBean_em.html';">
+<span class="sortValue">1.0</span>
+<div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:100%"></div></div></div></td>
+<td id="tc-526">  <span class="sortValue">org.jsoup.nodes.TextNodeTest.testTextBean</span><a href="../../org/jsoup/nodes/TextNodeTest_testTextBean_em.html" title="View Test Summary Page">org.jsoup.nodes.TextNodeTest.testTextBean</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../org/jsoup/nodes/TextNodeTest.html?line=30#src-30" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../org/jsoup/nodes/TextNodeTest_testTextBean_em.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-266">
+<td><a name="testA-266"></a><input type="checkbox" id="cb-266" value="266" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../org/jsoup/nodes/ElementTest_testAddNewElement_7e.html';">
+<span class="sortValue">1.0</span>
+<div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:100%"></div></div></div></td>
+<td id="tc-266">  <span class="sortValue">org.jsoup.nodes.ElementTest.testAddNewElement</span><a href="../../org/jsoup/nodes/ElementTest_testAddNewElement_7e.html" title="View Test Summary Page">org.jsoup.nodes.ElementTest.testAddNewElement</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../org/jsoup/nodes/ElementTest.html?line=380#src-380" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../org/jsoup/nodes/ElementTest_testAddNewElement_7e.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-371">
+<td><a name="testA-371"></a><input type="checkbox" id="cb-371" value="371" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../org/jsoup/parser/HtmlParserTest_testAFlowContents_ab.html';">
+<span class="sortValue">1.0</span>
+<div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:100%"></div></div></div></td>
+<td id="tc-371">  <span class="sortValue">org.jsoup.parser.HtmlParserTest.testAFlowContents</span><a href="../../org/jsoup/parser/HtmlParserTest_testAFlowContents_ab.html" title="View Test Summary Page">org.jsoup.parser.HtmlParserTest.testAFlowContents</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../org/jsoup/parser/HtmlParserTest.html?line=611#src-611" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../org/jsoup/parser/HtmlParserTest_testAFlowContents_ab.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-643">
+<td><a name="testA-643"></a><input type="checkbox" id="cb-643" value="643" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../org/jsoup/safety/CleanerTest_testRelaxed_hv.html';">
+<span class="sortValue">1.0</span>
+<div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:100%"></div></div></div></td>
+<td id="tc-643">  <span class="sortValue">org.jsoup.safety.CleanerTest.testRelaxed</span><a href="../../org/jsoup/safety/CleanerTest_testRelaxed_hv.html" title="View Test Summary Page">org.jsoup.safety.CleanerTest.testRelaxed</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../org/jsoup/safety/CleanerTest.html?line=49#src-49" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../org/jsoup/safety/CleanerTest_testRelaxed_hv.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-256">
+<td><a name="testA-256"></a><input type="checkbox" id="cb-256" value="256" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../org/jsoup/safety/CleanerTest_testRemoveTags_74.html';">
+<span class="sortValue">1.0</span>
+<div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:100%"></div></div></div></td>
+<td id="tc-256">  <span class="sortValue">org.jsoup.safety.CleanerTest.testRemoveTags</span><a href="../../org/jsoup/safety/CleanerTest_testRemoveTags_74.html" title="View Test Summary Page">org.jsoup.safety.CleanerTest.testRemoveTags</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../org/jsoup/safety/CleanerTest.html?line=55#src-55" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../org/jsoup/safety/CleanerTest_testRemoveTags_74.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-840">
+<td><a name="testA-840"></a><input type="checkbox" id="cb-840" value="840" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../org/jsoup/parser/TokeniserStateTest_handlesLessInTagThanAsNewTag_nc.html';">
+<span class="sortValue">1.0</span>
+<div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:100%"></div></div></div></td>
+<td id="tc-840">  <span class="sortValue">org.jsoup.parser.TokeniserStateTest.handlesLessInTagThanAsNewTag</span><a href="../../org/jsoup/parser/TokeniserStateTest_handlesLessInTagThanAsNewTag_nc.html" title="View Test Summary Page">org.jsoup.parser.TokeniserStateTest.handlesLessInTagThanAsNewTag</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../org/jsoup/parser/TokeniserStateTest.html?line=203#src-203" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../org/jsoup/parser/TokeniserStateTest_handlesLessInTagThanAsNewTag_nc.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-241">
+<td><a name="testA-241"></a><input type="checkbox" id="cb-241" value="241" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../org/jsoup/nodes/ElementTest_testRemoveAfterIndex_6p.html';">
+<span class="sortValue">1.0</span>
+<div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:100%"></div></div></div></td>
+<td id="tc-241">  <span class="sortValue">org.jsoup.nodes.ElementTest.testRemoveAfterIndex</span><a href="../../org/jsoup/nodes/ElementTest_testRemoveAfterIndex_6p.html" title="View Test Summary Page">org.jsoup.nodes.ElementTest.testRemoveAfterIndex</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../org/jsoup/nodes/ElementTest.html?line=1251#src-1251" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../org/jsoup/nodes/ElementTest_testRemoveAfterIndex_6p.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-405">
+<td><a name="testA-405"></a><input type="checkbox" id="cb-405" value="405" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../org/jsoup/parser/HtmlParserTest_handlesFrames_b9.html';">
+<span class="sortValue">1.0</span>
+<div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:100%"></div></div></div></td>
+<td id="tc-405">  <span class="sortValue">org.jsoup.parser.HtmlParserTest.handlesFrames</span><a href="../../org/jsoup/parser/HtmlParserTest_handlesFrames_b9.html" title="View Test Summary Page">org.jsoup.parser.HtmlParserTest.handlesFrames</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../org/jsoup/parser/HtmlParserTest.html?line=518#src-518" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../org/jsoup/parser/HtmlParserTest_handlesFrames_b9.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-934">
+<td><a name="testA-934"></a><input type="checkbox" id="cb-934" value="934" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../org/jsoup/parser/XmlTreeBuilderTest_testDetectCharsetEncodingDeclaration_py.html';">
+<span class="sortValue">1.0</span>
+<div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:100%"></div></div></div></td>
+<td id="tc-934">  <span class="sortValue">org.jsoup.parser.XmlTreeBuilderTest.testDetectCharsetEncodingDeclaration</span><a href="../../org/jsoup/parser/XmlTreeBuilderTest_testDetectCharsetEncodingDeclaration_py.html" title="View Test Summary Page">org.jsoup.parser.XmlTreeBuilderTest.testDetectCharsetEncodingDeclaration</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../org/jsoup/parser/XmlTreeBuilderTest.html?line=141#src-141" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../org/jsoup/parser/XmlTreeBuilderTest_testDetectCharsetEncodingDeclaration_py.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-309">
+<td><a name="testA-309"></a><input type="checkbox" id="cb-309" value="309" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../org/jsoup/parser/HtmlParserTest_testNoImagesInNoScriptInHead_8l.html';">
+<span class="sortValue">1.0</span>
+<div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:100%"></div></div></div></td>
+<td id="tc-309">  <span class="sortValue">org.jsoup.parser.HtmlParserTest.testNoImagesInNoScriptInHead</span><a href="../../org/jsoup/parser/HtmlParserTest_testNoImagesInNoScriptInHead_8l.html" title="View Test Summary Page">org.jsoup.parser.HtmlParserTest.testNoImagesInNoScriptInHead</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../org/jsoup/parser/HtmlParserTest.html?line=605#src-605" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../org/jsoup/parser/HtmlParserTest_testNoImagesInNoScriptInHead_8l.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-789">
+<td><a name="testA-789"></a><input type="checkbox" id="cb-789" value="789" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../org/jsoup/parser/HtmlParserTest_discardsNakedTds_lx.html';">
+<span class="sortValue">1.0</span>
+<div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:100%"></div></div></div></td>
+<td id="tc-789">  <span class="sortValue">org.jsoup.parser.HtmlParserTest.discardsNakedTds</span><a href="../../org/jsoup/parser/HtmlParserTest_discardsNakedTds_lx.html" title="View Test Summary Page">org.jsoup.parser.HtmlParserTest.discardsNakedTds</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../org/jsoup/parser/HtmlParserTest.html?line=264#src-264" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../org/jsoup/parser/HtmlParserTest_discardsNakedTds_lx.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-122">
+<td><a name="testA-122"></a><input type="checkbox" id="cb-122" value="122" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../org/jsoup/nodes/DocumentTest_testClonesDeclarations_3e.html';">
+<span class="sortValue">1.0</span>
+<div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:100%"></div></div></div></td>
+<td id="tc-122">  <span class="sortValue">org.jsoup.nodes.DocumentTest.testClonesDeclarations</span><a href="../../org/jsoup/nodes/DocumentTest_testClonesDeclarations_3e.html" title="View Test Summary Page">org.jsoup.nodes.DocumentTest.testClonesDeclarations</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../org/jsoup/nodes/DocumentTest.html?line=97#src-97" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../org/jsoup/nodes/DocumentTest_testClonesDeclarations_3e.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-439">
+<td><a name="testA-439"></a><input type="checkbox" id="cb-439" value="439" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../org/jsoup/parser/HtmlParserTest_handlesUnknownNamespaceTags_c7.html';">
+<span class="sortValue">1.0</span>
+<div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:100%"></div></div></div></td>
+<td id="tc-439">  <span class="sortValue">org.jsoup.parser.HtmlParserTest.handlesUnknownNamespaceTags</span><a href="../../org/jsoup/parser/HtmlParserTest_handlesUnknownNamespaceTags_c7.html" title="View Test Summary Page">org.jsoup.parser.HtmlParserTest.handlesUnknownNamespaceTags</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../org/jsoup/parser/HtmlParserTest.html?line=446#src-446" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../org/jsoup/parser/HtmlParserTest_handlesUnknownNamespaceTags_c7.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-434">
+<td><a name="testA-434"></a><input type="checkbox" id="cb-434" value="434" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../org/jsoup/parser/HtmlParserTest_parsesBodyFragment_c2.html';">
+<span class="sortValue">1.0</span>
+<div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:100%"></div></div></div></td>
+<td id="tc-434">  <span class="sortValue">org.jsoup.parser.HtmlParserTest.parsesBodyFragment</span><a href="../../org/jsoup/parser/HtmlParserTest_parsesBodyFragment_c2.html" title="View Test Summary Page">org.jsoup.parser.HtmlParserTest.parsesBodyFragment</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../org/jsoup/parser/HtmlParserTest.html?line=439#src-439" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../org/jsoup/parser/HtmlParserTest_parsesBodyFragment_c2.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-795">
+<td><a name="testA-795"></a><input type="checkbox" id="cb-795" value="795" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../org/jsoup/select/ElementsTest_before_m3.html';">
+<span class="sortValue">1.0</span>
+<div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:100%"></div></div></div></td>
+<td id="tc-795">  <span class="sortValue">org.jsoup.select.ElementsTest.before</span><a href="../../org/jsoup/select/ElementsTest_before_m3.html" title="View Test Summary Page">org.jsoup.select.ElementsTest.before</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../org/jsoup/select/ElementsTest.html?line=163#src-163" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../org/jsoup/select/ElementsTest_before_m3.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-429">
+<td><a name="testA-429"></a><input type="checkbox" id="cb-429" value="429" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../org/jsoup/nodes/ElementTest_testAppendRowToTable_bx.html';">
+<span class="sortValue">1.0</span>
+<div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:100%"></div></div></div></td>
+<td id="tc-429">  <span class="sortValue">org.jsoup.nodes.ElementTest.testAppendRowToTable</span><a href="../../org/jsoup/nodes/ElementTest_testAppendRowToTable_bx.html" title="View Test Summary Page">org.jsoup.nodes.ElementTest.testAppendRowToTable</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../org/jsoup/nodes/ElementTest.html?line=416#src-416" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../org/jsoup/nodes/ElementTest_testAppendRowToTable_bx.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-615">
+<td><a name="testA-615"></a><input type="checkbox" id="cb-615" value="615" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../org/jsoup/select/ElementsTest_outerHtml_h3.html';">
+<span class="sortValue">1.0</span>
+<div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:100%"></div></div></div></td>
+<td id="tc-615">  <span class="sortValue">org.jsoup.select.ElementsTest.outerHtml</span><a href="../../org/jsoup/select/ElementsTest_outerHtml_h3.html" title="View Test Summary Page">org.jsoup.select.ElementsTest.outerHtml</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../org/jsoup/select/ElementsTest.html?line=133#src-133" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../org/jsoup/select/ElementsTest_outerHtml_h3.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-313">
+<td><a name="testA-313"></a><input type="checkbox" id="cb-313" value="313" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../org/jsoup/parser/HtmlParserTest_ignoresDupeEndTrTag_8p.html';">
+<span class="sortValue">1.0</span>
+<div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:100%"></div></div></div></td>
+<td id="tc-313">  <span class="sortValue">org.jsoup.parser.HtmlParserTest.ignoresDupeEndTrTag</span><a href="../../org/jsoup/parser/HtmlParserTest_ignoresDupeEndTrTag_8p.html" title="View Test Summary Page">org.jsoup.parser.HtmlParserTest.ignoresDupeEndTrTag</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../org/jsoup/parser/HtmlParserTest.html?line=299#src-299" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../org/jsoup/parser/HtmlParserTest_ignoresDupeEndTrTag_8p.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-606">
+<td><a name="testA-606"></a><input type="checkbox" id="cb-606" value="606" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../org/jsoup/parser/HtmlParserTest_commentBeforeHtml_gu.html';">
+<span class="sortValue">1.0</span>
+<div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:100%"></div></div></div></td>
+<td id="tc-606">  <span class="sortValue">org.jsoup.parser.HtmlParserTest.commentBeforeHtml</span><a href="../../org/jsoup/parser/HtmlParserTest_commentBeforeHtml_gu.html" title="View Test Summary Page">org.jsoup.parser.HtmlParserTest.commentBeforeHtml</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../org/jsoup/parser/HtmlParserTest.html?line=709#src-709" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../org/jsoup/parser/HtmlParserTest_commentBeforeHtml_gu.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-223">
+<td><a name="testA-223"></a><input type="checkbox" id="cb-223" value="223" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../org/jsoup/safety/CleanerTest_basicWithImagesTest_67.html';">
+<span class="sortValue">1.0</span>
+<div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:100%"></div></div></div></td>
+<td id="tc-223">  <span class="sortValue">org.jsoup.safety.CleanerTest.basicWithImagesTest</span><a href="../../org/jsoup/safety/CleanerTest_basicWithImagesTest_67.html" title="View Test Summary Page">org.jsoup.safety.CleanerTest.basicWithImagesTest</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../org/jsoup/safety/CleanerTest.html?line=43#src-43" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../org/jsoup/safety/CleanerTest_basicWithImagesTest_67.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-503">
+<td><a name="testA-503"></a><input type="checkbox" id="cb-503" value="503" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../org/jsoup/parser/XmlTreeBuilderTest_canNormalizeCase_dz.html';">
+<span class="sortValue">1.0</span>
+<div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:100%"></div></div></div></td>
+<td id="tc-503">  <span class="sortValue">org.jsoup.parser.XmlTreeBuilderTest.canNormalizeCase</span><a href="../../org/jsoup/parser/XmlTreeBuilderTest_canNormalizeCase_dz.html" title="View Test Summary Page">org.jsoup.parser.XmlTreeBuilderTest.canNormalizeCase</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../org/jsoup/parser/XmlTreeBuilderTest.html?line=198#src-198" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../org/jsoup/parser/XmlTreeBuilderTest_canNormalizeCase_dz.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-598">
+<td><a name="testA-598"></a><input type="checkbox" id="cb-598" value="598" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../org/jsoup/nodes/ElementTest_testOuterHtml_gm.html';">
+<span class="sortValue">1.0</span>
+<div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:100%"></div></div></div></td>
+<td id="tc-598">  <span class="sortValue">org.jsoup.nodes.ElementTest.testOuterHtml</span><a href="../../org/jsoup/nodes/ElementTest_testOuterHtml_gm.html" title="View Test Summary Page">org.jsoup.nodes.ElementTest.testOuterHtml</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../org/jsoup/nodes/ElementTest.html?line=313#src-313" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../org/jsoup/nodes/ElementTest_testOuterHtml_gm.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-225">
+<td><a name="testA-225"></a><input type="checkbox" id="cb-225" value="225" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../org/jsoup/nodes/ElementTest_after_69.html';">
+<span class="sortValue">1.0</span>
+<div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:100%"></div></div></div></td>
+<td id="tc-225">  <span class="sortValue">org.jsoup.nodes.ElementTest.after</span><a href="../../org/jsoup/nodes/ElementTest_after_69.html" title="View Test Summary Page">org.jsoup.nodes.ElementTest.after</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../org/jsoup/nodes/ElementTest.html?line=543#src-543" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../org/jsoup/nodes/ElementTest_after_69.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-295">
+<td><a name="testA-295"></a><input type="checkbox" id="cb-295" value="295" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../org/jsoup/safety/CleanerTest_testRemoveEnforcedAttributes_87.html';">
+<span class="sortValue">1.0</span>
+<div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:100%"></div></div></div></td>
+<td id="tc-295">  <span class="sortValue">org.jsoup.safety.CleanerTest.testRemoveEnforcedAttributes</span><a href="../../org/jsoup/safety/CleanerTest_testRemoveEnforcedAttributes_87.html" title="View Test Summary Page">org.jsoup.safety.CleanerTest.testRemoveEnforcedAttributes</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../org/jsoup/safety/CleanerTest.html?line=69#src-69" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../org/jsoup/safety/CleanerTest_testRemoveEnforcedAttributes_87.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-51">
+<td><a name="testA-51"></a><input type="checkbox" id="cb-51" value="51" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../org/jsoup/parser/HtmlParserTest_noTableDirectInTable_1f.html';">
+<span class="sortValue">1.0</span>
+<div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:100%"></div></div></div></td>
+<td id="tc-51">  <span class="sortValue">org.jsoup.parser.HtmlParserTest.noTableDirectInTable</span><a href="../../org/jsoup/parser/HtmlParserTest_noTableDirectInTable_1f.html" title="View Test Summary Page">org.jsoup.parser.HtmlParserTest.noTableDirectInTable</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../org/jsoup/parser/HtmlParserTest.html?line=293#src-293" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../org/jsoup/parser/HtmlParserTest_noTableDirectInTable_1f.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-249">
+<td><a name="testA-249"></a><input type="checkbox" id="cb-249" value="249" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../org/jsoup/nodes/ElementTest_testWrap_6x.html';">
+<span class="sortValue">1.0</span>
+<div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:100%"></div></div></div></td>
+<td id="tc-249">  <span class="sortValue">org.jsoup.nodes.ElementTest.testWrap</span><a href="../../org/jsoup/nodes/ElementTest_testWrap_6x.html" title="View Test Summary Page">org.jsoup.nodes.ElementTest.testWrap</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../org/jsoup/nodes/ElementTest.html?line=520#src-520" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../org/jsoup/nodes/ElementTest_testWrap_6x.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-317">
+<td><a name="testA-317"></a><input type="checkbox" id="cb-317" value="317" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../org/jsoup/select/ElementsTest_unwrap_8t.html';">
+<span class="sortValue">1.0</span>
+<div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:100%"></div></div></div></td>
+<td id="tc-317">  <span class="sortValue">org.jsoup.select.ElementsTest.unwrap</span><a href="../../org/jsoup/select/ElementsTest_unwrap_8t.html" title="View Test Summary Page">org.jsoup.select.ElementsTest.unwrap</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../org/jsoup/select/ElementsTest.html?line=190#src-190" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../org/jsoup/select/ElementsTest_unwrap_8t.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-495">
+<td><a name="testA-495"></a><input type="checkbox" id="cb-495" value="495" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../org/jsoup/select/ElementsTest_unwrapP_dr.html';">
+<span class="sortValue">1.0</span>
+<div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:100%"></div></div></div></td>
+<td id="tc-495">  <span class="sortValue">org.jsoup.select.ElementsTest.unwrapP</span><a href="../../org/jsoup/select/ElementsTest_unwrapP_dr.html" title="View Test Summary Page">org.jsoup.select.ElementsTest.unwrapP</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../org/jsoup/select/ElementsTest.html?line=197#src-197" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../org/jsoup/select/ElementsTest_unwrapP_dr.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-312">
+<td><a name="testA-312"></a><input type="checkbox" id="cb-312" value="312" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../org/jsoup/nodes/ElementTest_testPrependRowToTable_8o.html';">
+<span class="sortValue">1.0</span>
+<div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:100%"></div></div></div></td>
+<td id="tc-312">  <span class="sortValue">org.jsoup.nodes.ElementTest.testPrependRowToTable</span><a href="../../org/jsoup/nodes/ElementTest_testPrependRowToTable_8o.html" title="View Test Summary Page">org.jsoup.nodes.ElementTest.testPrependRowToTable</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../org/jsoup/nodes/ElementTest.html?line=424#src-424" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../org/jsoup/nodes/ElementTest_testPrependRowToTable_8o.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-484">
+<td><a name="testA-484"></a><input type="checkbox" id="cb-484" value="484" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../org/jsoup/parser/HtmlParserTest_normalisesHeadlessBody_dg.html';">
+<span class="sortValue">1.0</span>
+<div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:100%"></div></div></div></td>
+<td id="tc-484">  <span class="sortValue">org.jsoup.parser.HtmlParserTest.normalisesHeadlessBody</span><a href="../../org/jsoup/parser/HtmlParserTest_normalisesHeadlessBody_dg.html" title="View Test Summary Page">org.jsoup.parser.HtmlParserTest.normalisesHeadlessBody</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../org/jsoup/parser/HtmlParserTest.html?line=562#src-562" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../org/jsoup/parser/HtmlParserTest_normalisesHeadlessBody_dg.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-689">
+<td><a name="testA-689"></a><input type="checkbox" id="cb-689" value="689" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../org/jsoup/parser/HtmlParserTest_handlesUnknownInlineTags_j5.html';">
+<span class="sortValue">1.0</span>
+<div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:100%"></div></div></div></td>
+<td id="tc-689">  <span class="sortValue">org.jsoup.parser.HtmlParserTest.handlesUnknownInlineTags</span><a href="../../org/jsoup/parser/HtmlParserTest_handlesUnknownInlineTags_j5.html" title="View Test Summary Page">org.jsoup.parser.HtmlParserTest.handlesUnknownInlineTags</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../org/jsoup/parser/HtmlParserTest.html?line=432#src-432" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../org/jsoup/parser/HtmlParserTest_handlesUnknownInlineTags_j5.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-61">
+<td><a name="testA-61"></a><input type="checkbox" id="cb-61" value="61" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../org/jsoup/safety/CleanerTest_testRemoveProtocols_1p.html';">
+<span class="sortValue">1.0</span>
+<div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:100%"></div></div></div></td>
+<td id="tc-61">  <span class="sortValue">org.jsoup.safety.CleanerTest.testRemoveProtocols</span><a href="../../org/jsoup/safety/CleanerTest_testRemoveProtocols_1p.html" title="View Test Summary Page">org.jsoup.safety.CleanerTest.testRemoveProtocols</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../org/jsoup/safety/CleanerTest.html?line=77#src-77" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../org/jsoup/safety/CleanerTest_testRemoveProtocols_1p.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-823">
+<td><a name="testA-823"></a><input type="checkbox" id="cb-823" value="823" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../org/jsoup/parser/HtmlParserTest_handlesNestedImplicitTable_mv.html';">
+<span class="sortValue">1.0</span>
+<div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:100%"></div></div></div></td>
+<td id="tc-823">  <span class="sortValue">org.jsoup.parser.HtmlParserTest.handlesNestedImplicitTable</span><a href="../../org/jsoup/parser/HtmlParserTest_handlesNestedImplicitTable_mv.html" title="View Test Summary Page">org.jsoup.parser.HtmlParserTest.handlesNestedImplicitTable</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../org/jsoup/parser/HtmlParserTest.html?line=272#src-272" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../org/jsoup/parser/HtmlParserTest_handlesNestedImplicitTable_mv.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-262">
+<td><a name="testA-262"></a><input type="checkbox" id="cb-262" value="262" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../org/jsoup/parser/HtmlParserTest_handlesCommentsInTable_7a.html';">
+<span class="sortValue">1.0</span>
+<div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:100%"></div></div></div></td>
+<td id="tc-262">  <span class="sortValue">org.jsoup.parser.HtmlParserTest.handlesCommentsInTable</span><a href="../../org/jsoup/parser/HtmlParserTest_handlesCommentsInTable_7a.html" title="View Test Summary Page">org.jsoup.parser.HtmlParserTest.handlesCommentsInTable</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../org/jsoup/parser/HtmlParserTest.html?line=858#src-858" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../org/jsoup/parser/HtmlParserTest_handlesCommentsInTable_7a.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-725">
+<td><a name="testA-725"></a><input type="checkbox" id="cb-725" value="725" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../org/jsoup/parser/HtmlParserTest_testSpanContents_k5.html';">
+<span class="sortValue">1.0</span>
+<div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:100%"></div></div></div></td>
+<td id="tc-725">  <span class="sortValue">org.jsoup.parser.HtmlParserTest.testSpanContents</span><a href="../../org/jsoup/parser/HtmlParserTest_testSpanContents_k5.html" title="View Test Summary Page">org.jsoup.parser.HtmlParserTest.testSpanContents</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../org/jsoup/parser/HtmlParserTest.html?line=599#src-599" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../org/jsoup/parser/HtmlParserTest_testSpanContents_k5.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-614">
+<td><a name="testA-614"></a><input type="checkbox" id="cb-614" value="614" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../org/jsoup/parser/HtmlParserTest_handlesUnexpectedMarkupInTables_h2.html';">
+<span class="sortValue">1.0</span>
+<div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:100%"></div></div></div></td>
+<td id="tc-614">  <span class="sortValue">org.jsoup.parser.HtmlParserTest.handlesUnexpectedMarkupInTables</span><a href="../../org/jsoup/parser/HtmlParserTest_handlesUnexpectedMarkupInTables_h2.html" title="View Test Summary Page">org.jsoup.parser.HtmlParserTest.handlesUnexpectedMarkupInTables</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../org/jsoup/parser/HtmlParserTest.html?line=648#src-648" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../org/jsoup/parser/HtmlParserTest_handlesUnexpectedMarkupInTables_h2.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-77">
+<td><a name="testA-77"></a><input type="checkbox" id="cb-77" value="77" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../org/jsoup/parser/HtmlParserTest_testHgroup_25.html';">
+<span class="sortValue">1.0</span>
+<div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:100%"></div></div></div></td>
+<td id="tc-77">  <span class="sortValue">org.jsoup.parser.HtmlParserTest.testHgroup</span><a href="../../org/jsoup/parser/HtmlParserTest_testHgroup_25.html" title="View Test Summary Page">org.jsoup.parser.HtmlParserTest.testHgroup</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../org/jsoup/parser/HtmlParserTest.html?line=581#src-581" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../org/jsoup/parser/HtmlParserTest_testHgroup_25.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-935">
+<td><a name="testA-935"></a><input type="checkbox" id="cb-935" value="935" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../org/jsoup/nodes/ElementTest_testSetHtml_pz.html';">
+<span class="sortValue">1.0</span>
+<div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:100%"></div></div></div></td>
+<td id="tc-935">  <span class="sortValue">org.jsoup.nodes.ElementTest.testSetHtml</span><a href="../../org/jsoup/nodes/ElementTest_testSetHtml_pz.html" title="View Test Summary Page">org.jsoup.nodes.ElementTest.testSetHtml</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../org/jsoup/nodes/ElementTest.html?line=499#src-499" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../org/jsoup/nodes/ElementTest_testSetHtml_pz.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-588">
+<td><a name="testA-588"></a><input type="checkbox" id="cb-588" value="588" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../org/jsoup/safety/CleanerTest_simpleBehaviourTest_gc.html';">
+<span class="sortValue">1.0</span>
+<div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:100%"></div></div></div></td>
+<td id="tc-588">  <span class="sortValue">org.jsoup.safety.CleanerTest.simpleBehaviourTest</span><a href="../../org/jsoup/safety/CleanerTest_simpleBehaviourTest_gc.html" title="View Test Summary Page">org.jsoup.safety.CleanerTest.simpleBehaviourTest</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../org/jsoup/safety/CleanerTest.html?line=21#src-21" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../org/jsoup/safety/CleanerTest_simpleBehaviourTest_gc.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-373">
+<td><a name="testA-373"></a><input type="checkbox" id="cb-373" value="373" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../org/jsoup/parser/HtmlParserTest_testFontFlowContents_ad.html';">
+<span class="sortValue">1.0</span>
+<div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:100%"></div></div></div></td>
+<td id="tc-373">  <span class="sortValue">org.jsoup.parser.HtmlParserTest.testFontFlowContents</span><a href="../../org/jsoup/parser/HtmlParserTest_testFontFlowContents_ad.html" title="View Test Summary Page">org.jsoup.parser.HtmlParserTest.testFontFlowContents</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../org/jsoup/parser/HtmlParserTest.html?line=617#src-617" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../org/jsoup/parser/HtmlParserTest_testFontFlowContents_ad.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-912">
+<td><a name="testA-912"></a><input type="checkbox" id="cb-912" value="912" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../org/jsoup/parser/HtmlParserTest_handlesKnownEmptyStyle_pc.html';">
+<span class="sortValue">1.0</span>
+<div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:100%"></div></div></div></td>
+<td id="tc-912">  <span class="sortValue">org.jsoup.parser.HtmlParserTest.handlesKnownEmptyStyle</span><a href="../../org/jsoup/parser/HtmlParserTest_handlesKnownEmptyStyle_pc.html" title="View Test Summary Page">org.jsoup.parser.HtmlParserTest.handlesKnownEmptyStyle</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../org/jsoup/parser/HtmlParserTest.html?line=466#src-466" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../org/jsoup/parser/HtmlParserTest_handlesKnownEmptyStyle_pc.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-554">
+<td><a name="testA-554"></a><input type="checkbox" id="cb-554" value="554" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../org/jsoup/parser/HtmlParserTest_testRelaxedTags_fe.html';">
+<span class="sortValue">1.0</span>
+<div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:100%"></div></div></div></td>
+<td id="tc-554">  <span class="sortValue">org.jsoup.parser.HtmlParserTest.testRelaxedTags</span><a href="../../org/jsoup/parser/HtmlParserTest_testRelaxedTags_fe.html" title="View Test Summary Page">org.jsoup.parser.HtmlParserTest.testRelaxedTags</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../org/jsoup/parser/HtmlParserTest.html?line=587#src-587" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../org/jsoup/parser/HtmlParserTest_testRelaxedTags_fe.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-185">
+<td><a name="testA-185"></a><input type="checkbox" id="cb-185" value="185" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../org/jsoup/select/ElementsTest_setHtml_55.html';">
+<span class="sortValue">1.0</span>
+<div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:100%"></div></div></div></td>
+<td id="tc-185">  <span class="sortValue">org.jsoup.select.ElementsTest.setHtml</span><a href="../../org/jsoup/select/ElementsTest_setHtml_55.html" title="View Test Summary Page">org.jsoup.select.ElementsTest.setHtml</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../org/jsoup/select/ElementsTest.html?line=139#src-139" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../org/jsoup/select/ElementsTest_setHtml_55.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-228">
+<td><a name="testA-228"></a><input type="checkbox" id="cb-228" value="228" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../org/jsoup/nodes/ElementTest_testAddNewHtml_6c.html';">
+<span class="sortValue">1.0</span>
+<div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:100%"></div></div></div></td>
+<td id="tc-228">  <span class="sortValue">org.jsoup.nodes.ElementTest.testAddNewHtml</span><a href="../../org/jsoup/nodes/ElementTest_testAddNewHtml_6c.html" title="View Test Summary Page">org.jsoup.nodes.ElementTest.testAddNewHtml</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../org/jsoup/nodes/ElementTest.html?line=473#src-473" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../org/jsoup/nodes/ElementTest_testAddNewHtml_6c.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-87">
+<td><a name="testA-87"></a><input type="checkbox" id="cb-87" value="87" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../org/jsoup/nodes/NodeTest_unwrapNoChildren_2f.html';">
+<span class="sortValue">1.0</span>
+<div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:100%"></div></div></div></td>
+<td id="tc-87">  <span class="sortValue">org.jsoup.nodes.NodeTest.unwrapNoChildren</span><a href="../../org/jsoup/nodes/NodeTest_unwrapNoChildren_2f.html" title="View Test Summary Page">org.jsoup.nodes.NodeTest.unwrapNoChildren</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../org/jsoup/nodes/NodeTest.html?line=212#src-212" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../org/jsoup/nodes/NodeTest_unwrapNoChildren_2f.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-283">
+<td><a name="testA-283"></a><input type="checkbox" id="cb-283" value="283" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../org/jsoup/parser/HtmlParserTest_testHtmlLowerCase_7v.html';">
+<span class="sortValue">1.0</span>
+<div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:100%"></div></div></div></td>
+<td id="tc-283">  <span class="sortValue">org.jsoup.parser.HtmlParserTest.testHtmlLowerCase</span><a href="../../org/jsoup/parser/HtmlParserTest_testHtmlLowerCase_7v.html" title="View Test Summary Page">org.jsoup.parser.HtmlParserTest.testHtmlLowerCase</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../org/jsoup/parser/HtmlParserTest.html?line=1089#src-1089" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../org/jsoup/parser/HtmlParserTest_testHtmlLowerCase_7v.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-501">
+<td><a name="testA-501"></a><input type="checkbox" id="cb-501" value="501" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../org/jsoup/parser/HtmlParserTest_handlesImplicitCaptionClose_dx.html';">
+<span class="sortValue">1.0</span>
+<div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:100%"></div></div></div></td>
+<td id="tc-501">  <span class="sortValue">org.jsoup.parser.HtmlParserTest.handlesImplicitCaptionClose</span><a href="../../org/jsoup/parser/HtmlParserTest_handlesImplicitCaptionClose_dx.html" title="View Test Summary Page">org.jsoup.parser.HtmlParserTest.handlesImplicitCaptionClose</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../org/jsoup/parser/HtmlParserTest.html?line=288#src-288" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../org/jsoup/parser/HtmlParserTest_handlesImplicitCaptionClose_dx.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-285">
+<td><a name="testA-285"></a><input type="checkbox" id="cb-285" value="285" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../org/jsoup/parser/HtmlParserTest_normalisesEmptyDocument_7x.html';">
+<span class="sortValue">1.0</span>
+<div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:100%"></div></div></div></td>
+<td id="tc-285">  <span class="sortValue">org.jsoup.parser.HtmlParserTest.normalisesEmptyDocument</span><a href="../../org/jsoup/parser/HtmlParserTest_normalisesEmptyDocument_7x.html" title="View Test Summary Page">org.jsoup.parser.HtmlParserTest.normalisesEmptyDocument</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../org/jsoup/parser/HtmlParserTest.html?line=557#src-557" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../org/jsoup/parser/HtmlParserTest_normalisesEmptyDocument_7x.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-84">
+<td><a name="testA-84"></a><input type="checkbox" id="cb-84" value="84" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../org/jsoup/parser/HtmlParserTest_handlesWhatWgExpensesTableExample_2c.html';">
+<span class="sortValue">1.0</span>
+<div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:100%"></div></div></div></td>
+<td id="tc-84">  <span class="sortValue">org.jsoup.parser.HtmlParserTest.handlesWhatWgExpensesTableExample</span><a href="../../org/jsoup/parser/HtmlParserTest_handlesWhatWgExpensesTableExample_2c.html" title="View Test Summary Page">org.jsoup.parser.HtmlParserTest.handlesWhatWgExpensesTableExample</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../org/jsoup/parser/HtmlParserTest.html?line=277#src-277" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../org/jsoup/parser/HtmlParserTest_handlesWhatWgExpensesTableExample_2c.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-14">
+<td><a name="testA-14"></a><input type="checkbox" id="cb-14" value="14" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../org/jsoup/parser/HtmlParserTest_fallbackToUtfIfCantEncode_e.html';">
+<span class="sortValue">1.0</span>
+<div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:100%"></div></div></div></td>
+<td id="tc-14">  <span class="sortValue">org.jsoup.parser.HtmlParserTest.fallbackToUtfIfCantEncode</span><a href="../../org/jsoup/parser/HtmlParserTest_fallbackToUtfIfCantEncode_e.html" title="View Test Summary Page">org.jsoup.parser.HtmlParserTest.fallbackToUtfIfCantEncode</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../org/jsoup/parser/HtmlParserTest.html?line=1234#src-1234" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../org/jsoup/parser/HtmlParserTest_fallbackToUtfIfCantEncode_e.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-928">
+<td><a name="testA-928"></a><input type="checkbox" id="cb-928" value="928" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../org/jsoup/parser/HtmlParserTest_handlesKnownEmptyNoFrames_ps.html';">
+<span class="sortValue">1.0</span>
+<div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:100%"></div></div></div></td>
+<td id="tc-928">  <span class="sortValue">org.jsoup.parser.HtmlParserTest.handlesKnownEmptyNoFrames</span><a href="../../org/jsoup/parser/HtmlParserTest_handlesKnownEmptyNoFrames_ps.html" title="View Test Summary Page">org.jsoup.parser.HtmlParserTest.handlesKnownEmptyNoFrames</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../org/jsoup/parser/HtmlParserTest.html?line=460#src-460" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../org/jsoup/parser/HtmlParserTest_handlesKnownEmptyNoFrames_ps.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-143">
+<td><a name="testA-143"></a><input type="checkbox" id="cb-143" value="143" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../org/jsoup/safety/CleanerTest_simpleBehaviourTest2_3z.html';">
+<span class="sortValue">1.0</span>
+<div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:100%"></div></div></div></td>
+<td id="tc-143">  <span class="sortValue">org.jsoup.safety.CleanerTest.simpleBehaviourTest2</span><a href="../../org/jsoup/safety/CleanerTest_simpleBehaviourTest2_3z.html" title="View Test Summary Page">org.jsoup.safety.CleanerTest.simpleBehaviourTest2</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../org/jsoup/safety/CleanerTest.html?line=28#src-28" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../org/jsoup/safety/CleanerTest_simpleBehaviourTest2_3z.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-532">
+<td><a name="testA-532"></a><input type="checkbox" id="cb-532" value="532" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../org/jsoup/nodes/TextNodeTest_testSplitAnEmbolden_es.html';">
+<span class="sortValue">1.0</span>
+<div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:100%"></div></div></div></td>
+<td id="tc-532">  <span class="sortValue">org.jsoup.nodes.TextNodeTest.testSplitAnEmbolden</span><a href="../../org/jsoup/nodes/TextNodeTest_testSplitAnEmbolden_es.html" title="View Test Summary Page">org.jsoup.nodes.TextNodeTest.testSplitAnEmbolden</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../org/jsoup/nodes/TextNodeTest.html?line=62#src-62" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../org/jsoup/nodes/TextNodeTest_testSplitAnEmbolden_es.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-888">
+<td><a name="testA-888"></a><input type="checkbox" id="cb-888" value="888" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../org/jsoup/parser/HtmlParserTest_handlesBlocksInDefinitions_oo.html';">
+<span class="sortValue">1.0</span>
+<div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:100%"></div></div></div></td>
+<td id="tc-888">  <span class="sortValue">org.jsoup.parser.HtmlParserTest.handlesBlocksInDefinitions</span><a href="../../org/jsoup/parser/HtmlParserTest_handlesBlocksInDefinitions_oo.html" title="View Test Summary Page">org.jsoup.parser.HtmlParserTest.handlesBlocksInDefinitions</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../org/jsoup/parser/HtmlParserTest.html?line=509#src-509" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../org/jsoup/parser/HtmlParserTest_handlesBlocksInDefinitions_oo.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-691">
+<td><a name="testA-691"></a><input type="checkbox" id="cb-691" value="691" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../org/jsoup/safety/CleanerTest_whitelistedProtocolShouldBeRetained_j7.html';">
+<span class="sortValue">1.0</span>
+<div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:100%"></div></div></div></td>
+<td id="tc-691">  <span class="sortValue">org.jsoup.safety.CleanerTest.whitelistedProtocolShouldBeRetained</span><a href="../../org/jsoup/safety/CleanerTest_whitelistedProtocolShouldBeRetained_j7.html" title="View Test Summary Page">org.jsoup.safety.CleanerTest.whitelistedProtocolShouldBeRetained</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../org/jsoup/safety/CleanerTest.html?line=85#src-85" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../org/jsoup/safety/CleanerTest_whitelistedProtocolShouldBeRetained_j7.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-204">
+<td><a name="testA-204"></a><input type="checkbox" id="cb-204" value="204" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../org/jsoup/helper/W3CDomTest_simpleConversion_5o.html';">
+<span class="sortValue">1.0</span>
+<div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:100%"></div></div></div></td>
+<td id="tc-204">  <span class="sortValue">org.jsoup.helper.W3CDomTest.simpleConversion</span><a href="../../org/jsoup/helper/W3CDomTest_simpleConversion_5o.html" title="View Test Summary Page">org.jsoup.helper.W3CDomTest.simpleConversion</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../org/jsoup/helper/W3CDomTest.html?line=19#src-19" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../org/jsoup/helper/W3CDomTest_simpleConversion_5o.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-17">
+<td><a name="testA-17"></a><input type="checkbox" id="cb-17" value="17" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../org/jsoup/safety/CleanerTest_whitelistedProtocolShouldBeRetained_h.html';">
+<span class="sortValue">1.0</span>
+<div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:100%"></div></div></div></td>
+<td id="tc-17">  <span class="sortValue">org.jsoup.safety.CleanerTest.whitelistedProtocolShouldBeRetained</span><a href="../../org/jsoup/safety/CleanerTest_whitelistedProtocolShouldBeRetained_h.html" title="View Test Summary Page">org.jsoup.safety.CleanerTest.whitelistedProtocolShouldBeRetained</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../org/jsoup/safety/CleanerTest.html?line=85#src-85" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../org/jsoup/safety/CleanerTest_whitelistedProtocolShouldBeRetained_h.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-320">
+<td><a name="testA-320"></a><input type="checkbox" id="cb-320" value="320" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../org/jsoup/select/ElementsTest_after_8w.html';">
+<span class="sortValue">1.0</span>
+<div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:100%"></div></div></div></td>
+<td id="tc-320">  <span class="sortValue">org.jsoup.select.ElementsTest.after</span><a href="../../org/jsoup/select/ElementsTest_after_8w.html" title="View Test Summary Page">org.jsoup.select.ElementsTest.after</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../org/jsoup/select/ElementsTest.html?line=169#src-169" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../org/jsoup/select/ElementsTest_after_8w.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-579">
+<td><a name="testA-579"></a><input type="checkbox" id="cb-579" value="579" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../org/jsoup/parser/HtmlParserTest_handlesKnownEmptyIframe_g3.html';">
+<span class="sortValue">1.0</span>
+<div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:100%"></div></div></div></td>
+<td id="tc-579">  <span class="sortValue">org.jsoup.parser.HtmlParserTest.handlesKnownEmptyIframe</span><a href="../../org/jsoup/parser/HtmlParserTest_handlesKnownEmptyIframe_g3.html" title="View Test Summary Page">org.jsoup.parser.HtmlParserTest.handlesKnownEmptyIframe</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../org/jsoup/parser/HtmlParserTest.html?line=478#src-478" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../org/jsoup/parser/HtmlParserTest_handlesKnownEmptyIframe_g3.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-215">
+<td><a name="testA-215"></a><input type="checkbox" id="cb-215" value="215" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../org/jsoup/nodes/ElementTest_testWrapWithRemainder_5z.html';">
+<span class="sortValue">1.0</span>
+<div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:100%"></div></div></div></td>
+<td id="tc-215">  <span class="sortValue">org.jsoup.nodes.ElementTest.testWrapWithRemainder</span><a href="../../org/jsoup/nodes/ElementTest_testWrapWithRemainder_5z.html" title="View Test Summary Page">org.jsoup.nodes.ElementTest.testWrapWithRemainder</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../org/jsoup/nodes/ElementTest.html?line=553#src-553" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../org/jsoup/nodes/ElementTest_testWrapWithRemainder_5z.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-722">
+<td><a name="testA-722"></a><input type="checkbox" id="cb-722" value="722" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../org/jsoup/nodes/ElementTest_testRemoveBeforeIndex_k2.html';">
+<span class="sortValue">1.0</span>
+<div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:100%"></div></div></div></td>
+<td id="tc-722">  <span class="sortValue">org.jsoup.nodes.ElementTest.testRemoveBeforeIndex</span><a href="../../org/jsoup/nodes/ElementTest_testRemoveBeforeIndex_k2.html" title="View Test Summary Page">org.jsoup.nodes.ElementTest.testRemoveBeforeIndex</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../org/jsoup/nodes/ElementTest.html?line=1234#src-1234" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../org/jsoup/nodes/ElementTest_testRemoveBeforeIndex_k2.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-116">
+<td><a name="testA-116"></a><input type="checkbox" id="cb-116" value="116" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../org/jsoup/parser/HtmlParserTest_parsesQuiteRoughAttributes_38.html';">
+<span class="sortValue">1.0</span>
+<div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:100%"></div></div></div></td>
+<td id="tc-116">  <span class="sortValue">org.jsoup.parser.HtmlParserTest.parsesQuiteRoughAttributes</span><a href="../../org/jsoup/parser/HtmlParserTest_parsesQuiteRoughAttributes_38.html" title="View Test Summary Page">org.jsoup.parser.HtmlParserTest.parsesQuiteRoughAttributes</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../org/jsoup/parser/HtmlParserTest.html?line=77#src-77" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../org/jsoup/parser/HtmlParserTest_parsesQuiteRoughAttributes_38.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-930">
+<td><a name="testA-930"></a><input type="checkbox" id="cb-930" value="930" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../org/jsoup/nodes/ElementTest_insertChildrenAsCopy_pu.html';">
+<span class="sortValue">1.0</span>
+<div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:100%"></div></div></div></td>
+<td id="tc-930">  <span class="sortValue">org.jsoup.nodes.ElementTest.insertChildrenAsCopy</span><a href="../../org/jsoup/nodes/ElementTest_insertChildrenAsCopy_pu.html" title="View Test Summary Page">org.jsoup.nodes.ElementTest.insertChildrenAsCopy</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../org/jsoup/nodes/ElementTest.html?line=847#src-847" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../org/jsoup/nodes/ElementTest_insertChildrenAsCopy_pu.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-248">
+<td><a name="testA-248"></a><input type="checkbox" id="cb-248" value="248" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../org/jsoup/parser/XmlTreeBuilderTest_appendPreservesCaseByDefault_6w.html';">
+<span class="sortValue">1.0</span>
+<div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:100%"></div></div></div></td>
+<td id="tc-248">  <span class="sortValue">org.jsoup.parser.XmlTreeBuilderTest.appendPreservesCaseByDefault</span><a href="../../org/jsoup/parser/XmlTreeBuilderTest_appendPreservesCaseByDefault_6w.html" title="View Test Summary Page">org.jsoup.parser.XmlTreeBuilderTest.appendPreservesCaseByDefault</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../org/jsoup/parser/XmlTreeBuilderTest.html?line=189#src-189" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../org/jsoup/parser/XmlTreeBuilderTest_appendPreservesCaseByDefault_6w.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+
+            </tbody>
+        </table>
+
+        
+        <div>&#160;</div>
+
+    
+    </div>
+
+    
+    <footer class="aui-dialog2-footer">
+        <div class="aui-dialog2-footer-actions">
+            <button data-dialog-id="contr-tests-dialog" class="aui-button aui-button-primary dialog-close-button">Apply</button>
+        </div>
+        <div class="aui-dialog2-footer-hint">Select tests to highlight code covered by them in the source view.</div>
+    </footer>
+</section>
+
+ 
+        
+        
+
+
+
+
+
+<h2>Source view</h2>
+
+
+<div style="display: table; width: 100%;">
+    <div style="display: table-cell">
+        <button class="aui-button aui-button-link"
+                title="Toggles all methods in the source to be either expanded or collapsed."
+                onclick="toggleAllInlineMethods(this); return false;" id="method-expander">
+            Collapse all methods
+        </button>
+    </div>
+    <div style="display: table-cell">
+        <div style="text-align: right; margin-bottom: 10px">
+            <button class="aui-button aui-button-subtle" id="popupHelp">
+    <span class="aui-icon aui-icon-small aui-iconfont-help"></span>&#160;Show legend
+</button>
+<script>
+    AJS.InlineDialog(AJS.$("#popupHelp"), "helpDialog",
+            function(content, trigger, showPopup) {
+                content.css({"padding":"20px"}).html(SRC_FILE_LEGEND_TEXT);
+                showPopup();
+                return false;
+            },
+            {
+                width: 700, hideDelay: 60000
+            }
+    );
+</script>        </div>
+    </div>
+</div>
+
+<table cellspacing="0" cellpadding="0" class="srcView" width="100%">
+
+    
+<tbody> <tr id="l1">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=1#src-1">1</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-1" class="srcLine"><span class="keyword">package</span> org.<a href="../jsoup/pkg-summary.html">jsoup</a>;</span></td>
+</tr>
+ <tr id="l2">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=2#src-2">2</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-2" class="srcLine"></span></td>
+</tr>
+ <tr id="l3">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=3#src-3">3</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-3" class="srcLine"><span class="keyword">import</span> java.util.regex.Pattern;</span></td>
+</tr>
+ <tr id="l4">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=4#src-4">4</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-4" class="srcLine"></span></td>
+</tr>
+ <tr id="l5">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=5#src-5">5</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-5" class="srcLine"><span class="comment">/**</span></span></td>
+</tr>
+ <tr id="l6">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=6#src-6">6</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-6" class="srcLine"><span class="comment"> Text utils to ease testing</span></span></td>
+</tr>
+ <tr id="l7">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=7#src-7">7</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-7" class="srcLine"></span></td>
+</tr>
+ <tr id="l8">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=8#src-8">8</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-8" class="srcLine"><span class="comment"> </span><span class="javadoc">@author</span><span class="comment"> Jonathan Hedley, jonathan</span><span class="comment">@hedley.net */</span></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="9" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-9' onclick="toggleInlineStats(this, 'inlinestats-9');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-9" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-9'), 'inlinestats-9');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (2)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 1</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l9">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=9#src-9">9</a></td>
+<td align="right" class="coverageCount NoHilight "   onclick="return showTestsForLine(this, 9, 'Tests that hit TextUtil');" >&#160;&#160;</td>
+<td class=" srcCell" id="id-9"><span class="spacer"></span><span id="src-9" class="srcLine"><span class="keyword">public</span> <span class="keyword">class</span> <a href="../../org/jsoup/TextUtil.html#TextUtil">TextUtil</a> {</span></td>
+</tr>
+ <tr id="l10">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=10#src-10">10</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-10" class="srcLine">    <span class="keyword">static</span> Pattern stripper = Pattern.compile(<span class="string">&quot;\\r?\\n\\s*&quot;</span>);</span></td>
+</tr>
+ <tr id="l11">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=11#src-11">11</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-11" class="srcLine"></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="12" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-12' onclick="toggleInlineStats(this, 'inlinestats-12');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-12" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-12'), 'inlinestats-12');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (1)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 1</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l12">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=12#src-12">12</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 12, 'Tests that hit stripNewlines(String)&#160;:&#160;String');" ><span title="Line 12, Col 5: method entered 106 times." class="nolink">&#160;106</span></td>
+<td class=" methodStart  srcCell" id="id-12"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 12,14);" id="img-12" src="../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-12" class="srcLine"><span class="nolink" title="Line 12, Col 5: method entered 106 times.">    <span class="keyword">public</span> <span class="keyword">static</span> String stripNewlines(String text) {</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-12'), 12,14);" id="e12" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l13">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=13#src-13">13</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 13, 'Tests that hit line # 13');" ><span title="Line 13, Col 9: statement executed 106 times." class="nolink">&#160;106</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-13" class="srcLine"><span class="nolink" title="Line 13, Col 9: statement executed 106 times.">        <span class="keyword">return</span> stripper.matcher(text).replaceAll(<span class="string">&quot;&quot;</span>);</span></span></td>
+</tr>
+ <tr id="l14">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=14#src-14">14</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-14" class="srcLine">    }</span></td>
+</tr>
+ <tr id="l15">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=15#src-15">15</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-15" class="srcLine">}</span></td>
+</tr>
+ 
+    </tbody></table>    </div>
+</div><!-- .aui-tabs -->
+
+<script type="text/javascript"> 
+    var ol_bgclass = "overBG";
+    var ol_fgclass = "overFG";
+    var ol_cgclass = "overCaption";
+    var ol_captionfontclass= "overCaption";
+    var ol_closefontclass = "closeFont";
+    var ol_closeclick = 1;
+    var ol_close = 'X';
+    var ol_wrap = 1;
+    var rootRelPath = '../../';
+    var testsPerFile = -1;
+</script>
+<script src="TextUtil.js" type="text/javascript"></script>
+
+                        </div> <!-- class="aui-page-panel-content-clover" -->
+                    <footer id="footer" role="contentinfo">
+    <section class="footer-body">
+        <ul>
+            <li>
+                Report generated by <a target="_new" href="http://openclover.org">OpenClover</a> v 4.2.0
+                on Thu Oct 19 2023 19:08:34 PDT using coverage data from Thu Oct 19 2023 19:08:32 PDT.
+            </li>
+        </ul>
+        <ul>
+            <li>Clover free edition. </li>
+        </ul>
+    </section>
+</footer>                </section> <!-- class="aui-page-panel-content" -->
+            </div> <!-- class="aui-page-panel-inner" -->
+        </div> <!-- class="aui-page-panel" -->
+    </div> <!-- id="page" -->
+</body>
+</html>

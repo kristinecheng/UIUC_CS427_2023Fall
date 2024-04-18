@@ -1,0 +1,6 @@
+org.jsoup.nodes.ElementTest.testFormatOutline
+org.jsoup.nodes.ElementTest.testFormatHtml
+org.jsoup.nodes.ElementTest.testSetHtmlTitle
+org.jsoup.nodes.FormElementTest.createsFormData
+org.jsoup.nodes.DocumentTest.testHtmlAppendable
+org.jsoup.nodes.DocumentTest.testClone

@@ -1,0 +1,3 @@
+org.jsoup.helper.DataUtilTest.discardsSpuriousByteOrderMarkWhenNoCharsetSet
+org.jsoup.helper.DataUtilTest.discardsSpuriousByteOrderMark
+org.jsoup.helper.W3CDomTest.simpleConversion

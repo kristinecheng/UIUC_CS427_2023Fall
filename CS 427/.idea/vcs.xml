@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/HW1/jsoup" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/HW3/jsoup" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/HW5/jsoup" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cs427-hw2" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cs427-hw4" vcs="Git" />
+  </component>
+</project>
